@@ -3,6 +3,12 @@ import ReactDOM from 'react-dom';
 import FadeIn from 'react-fade-in';
 import Subtitle from './components/Subtitle';
 import GithubButton from './components/GithubButton';
+import Chatbot from 'react-chatbot-kit'
+import 'react-chatbot-kit/build/main.css'
+
+import config from "./configs/chatbotConfig";
+import MessageParser from "./chatbot/MessageParser";
+import ActionProvider from "./chatbot/ActionProvider";
 
 const App = () => {
     return (
@@ -15,7 +21,7 @@ const App = () => {
             </div>
             <div className="box main-box">
                 <div class="box-content">
-                    2
+                    <Chatbot config={config} actionProvider={ActionProvider} messageParser={MessageParser} />
                 </div>    
             </div>
             <div className="box side-box">
