@@ -5,7 +5,7 @@ app.commandLine.appendSwitch('disable-http-cache');
 function createWindow () {
     let win = new BrowserWindow({
         width: 800,
-        height: 740,
+        height: 750,
         webPreferences: {
             nodeIntegration: true,
         }
