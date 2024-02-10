@@ -3,7 +3,7 @@ import FadeIn from 'react-fade-in/lib/FadeIn';
 
 const SubmitButton = () => {
     const handleClick = () => {
-        window.location.href = '/result.html';
+        window.location.href = 'result.html'
     };
 
     return (
