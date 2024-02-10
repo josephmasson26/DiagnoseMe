@@ -34,6 +34,7 @@ const App = () => {
 
             <div className="box side-box">
                 <div class="box-content">
+                    <p>type in your diagnosis</p>
                     <Dropdown options={options} />
                 </div>
             </div>

@@ -18,7 +18,9 @@ const Dropdown = ({ options }) => {
             const key = event.key;
             if (display && /^[a-zA-Z]$/.test(key)) {
                 setSearch(search + key);
-            }
+            } else if (display && key === 'Backspace') {
+                setSearch(search.slice(0, -1));
+              }
         };
 
         window.addEventListener('keydown', handleKeyDown);
