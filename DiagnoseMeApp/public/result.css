@@ -24,8 +24,8 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       text-align: center;
-      font-size: 2em;
-      margin-top: -10px;
+      font-size: 1.5em;
+      margin-top: 30px;
   }
   
   .container {
@@ -39,16 +39,22 @@
   }
   
   body {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+
       background: url('./assets/images/background2.jpeg') no-repeat center center fixed; 
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      margin: 0;
-      height: 100%;
+
   
-      align-items: center;
+     
+    
       
   }
   
@@ -60,31 +66,7 @@
       overflow: hidden; /* Prevents scrollbars */
     }
 
-result-header {
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 1.5em;
-    margin-top: 10px;
-    width: 100%;
-    background: linear-gradient(to right, #9f60e1, #5f3a9b);
-    border-radius: 15px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-    color: white;
-  }
   
-  .result-header {
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 1.5em;
-    margin-top: 10px;
-    width: 100%;
-    background: linear-gradient(to right, #9f60e1, #5f3a9b);
-    border-radius: 15px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-    color: white;
-  }
   
   .result-header {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -99,17 +81,18 @@ result-header {
     color: white;
   }
   
-  
-  
-  .result-header {
-    background: linear-gradient(to right, #ca35db 0%, #330867 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-align: center;
-      font-size: 2em;
-      margin-top: -10px;
-    }
-  
+
   
    
  
+
+.react-stars .react-stars-container .react-stars-stars .react-stars-stars-front {
+    background: linear-gradient(to right, #ca35db 0%, #330867 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
