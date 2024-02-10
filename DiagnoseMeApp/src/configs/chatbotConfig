@@ -7,7 +7,7 @@ const config = {
   
   customStyles: ICustomStyles ={
     botMessageBox: {
-      backgroundColor: '#ff7e5f',
+      backgroundColor: '#35cbd0',
     },
     chatButton: {
       backgroundColor: '#7f4fe7',
