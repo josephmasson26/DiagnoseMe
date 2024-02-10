@@ -34,7 +34,7 @@ export const ButtonGooey = () => {
             <feColorMatrix
               in="blur"
               mode="matrix"
-              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10"
+              values="0 0 1 0 0  0 1 1 0 0  1 0 1 0 1  0 0 0 20 -10"
 
               result="gooey"
             />
@@ -55,7 +55,7 @@ export const ButtonGooey = () => {
         }
 
         .button {
-          background: #7e44c5;
+          background: linear-gradient(to right, #a199db, #6a3093);
           color: #eee;
           display: inline-flex;
           font-weight: bold;
