@@ -9,17 +9,20 @@ submitBtn.onclick = async (ev) => {
   greeting.textContent = 'Generating...';
 
   try {
-    
-    // let initialPrompt = `Gemini, keep your response to one paragraph or less, my query is: 
-    // `;
+    let context = 
+    `
+    Gemini, you are required keep your single paragraph response to one contiguous block of text.
+    `;
     let contents = [
       {
         role: 'user',
         parts: [
-          { text: promptInput.value }
+          { text: context + promptInput.value }
         ]
       }
     ];
+
+    console.log('Sending message to Gemini:', contents[0].parts[0].text);
 
     // Call the gemini-pro, and get a stream of results
     let stream = streamGemini({
