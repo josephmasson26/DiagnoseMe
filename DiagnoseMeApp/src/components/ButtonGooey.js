@@ -55,7 +55,7 @@ export const ButtonGooey = () => {
         }
 
         .button {
-          background: #7e44c5;
+          background: linear-gradient(to right, #a199db, #6a3093);
           color: #eee;
           display: inline-flex;
           font-weight: bold;
