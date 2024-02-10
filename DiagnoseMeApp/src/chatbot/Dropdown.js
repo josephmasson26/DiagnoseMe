@@ -5,6 +5,7 @@ const Dropdown = ({ options }) => {
     const [openedOnce, setOpenedOnce] = useState(false);
     const [search, setSearch] = useState("");
     const [filteredOptions, setFilteredOptions] = useState([]);
+    const [isMouseInside, setIsMouseInside] = useState(false); // New state variable
     const dropdownBodyRef = useRef(null);
 
     useEffect(() => {
@@ -22,11 +23,11 @@ const Dropdown = ({ options }) => {
 
         const handleKeyDown = (event) => {
             const key = event.key;
-            if (display && /^[a-zA-Z]$/.test(key)) {
+            if (display && /^[a-zA-Z]$/.test(key) && isMouseInside) { // Check isMouseInside
                 setSearch(search + key);
-            } else if (display && key === 'Backspace') {
+            } else if (display && key === 'Backspace' && isMouseInside) { // Check isMouseInside
                 setSearch(search.slice(0, -1));
-            } else if (display && key === ' ') {
+            } else if (display && key === ' ' && isMouseInside) { // Check isMouseInside
                 setSearch(search + ' ');
             }
         };
@@ -36,7 +37,7 @@ const Dropdown = ({ options }) => {
         return () => {
             window.removeEventListener('keydown', handleKeyDown);
         };
-    }, [search, display]);
+    }, [search, display, isMouseInside]); // Add isMouseInside to dependency array
 
     const toggleDropdown = () => {
         if (!openedOnce) {
@@ -47,7 +48,10 @@ const Dropdown = ({ options }) => {
 
     return (
         <div className="dropdown">
-            <div className="dropdown-header" onMouseEnter={toggleDropdown}>
+            <div className="dropdown-header" 
+                 onMouseEnter={() => { toggleDropdown(); setIsMouseInside(true); }} // Set isMouseInside to true
+                 onMouseLeave={() => setIsMouseInside(false)} // Set isMouseInside to false
+            >
                 {search}
             </div>
             {display &&(
