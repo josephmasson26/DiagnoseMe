@@ -70,7 +70,19 @@ body, html {
     opacity: 0.6;
     color: white;
     border-radius: 10px; /* Rounded corners */
-    transition: background 3s ease-in-out; /* Smooth transition */
+    transition: background 3s ease; /* Smooth transition */
+    transition: transform 2s ease;
+  }
+
+  .box::before{
+    transition: 2s;
+    transform: scale(.9);
+    z-index: -1;
+  }
+
+  .box :hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #e13c62;
   }
 
   .box-content {
@@ -81,18 +93,32 @@ body, html {
 
   .box:nth-child(1) {
     background: linear-gradient(to right, #ca35db, #d99dfd);
+    opacity: 0.2;
   }
 
   .box:nth-child(1):hover {
-    background: linear-gradient(to right, #feb47b, #ff7e5f);
+    background: #b94ff7;
+    color: #66bcde;
+    box-shadow: 0 0 30px #e13c62;
+    text-shadow: 0 0 15px #e13c62;
+    opacity: 1;
+    transform: scale(1.1); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
+
   }
   
   .box:nth-child(3) {
     background: linear-gradient(to right, #8cb5f5, #e2c4f6);
+    opacity: 0.2;
   }
 
   .box:nth-child(3):hover {
-    background: linear-gradient(to right, #feb47b, #ff7e5f);
+    background: #8b6dc3;
+    color: #66bcde;
+    box-shadow: 0 0 30px #e13c62;
+    text-shadow: 0 0 30px #e13c62;
+    opacity: 1;
+    transform: scale(1.1); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
+
   }
 
   .main-box {
@@ -101,10 +127,17 @@ body, html {
     position: relative;
     padding: 20px;
     background: linear-gradient(to right, #c1bafd, #330867); /* Different variant */
+    opacity: 0.2;
   }
 
   .main-box:hover {
-    background: linear-gradient(to right, #30065a, #c296e1);
+    background: #460b8f; /* Different variant */
+    color: #66bcde;
+    box-shadow: 0 0 30px #e13c62;
+    text-shadow: 0 0 30px #e13c62;
+    opacity: 1;
+    transform: scale(1.1); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
+
   }
 
 .grid {
