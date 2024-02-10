@@ -5,4 +5,5 @@ To Run Frontend:
 -npm install
 -npm start
 To Run Backend:
--backend: python3 main.py
+- pip install
+- python3 main.py
