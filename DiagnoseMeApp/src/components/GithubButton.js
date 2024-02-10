@@ -3,7 +3,7 @@ import React from 'react';
 import FadeIn from 'react-fade-in';
 
 const GithubButton = ({ repoUrl }) => (
-    <FadeIn delay={1000} transitionDuration={2000}>
+    <FadeIn delay={1500} transitionDuration={2000}>
         <div className="github-button-wrapper">
             <a href={repoUrl} className="github-button">
                 <img src="./assets/images/github-logo.png" alt="GitHub" />
