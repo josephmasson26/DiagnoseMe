@@ -160,12 +160,18 @@ body, html {
     padding: 10px;
     overflow: hidden;
     max-width: 200px;
-    max-height: 200px;
-    transition: height 3s ease-in-out;
+    max-height: 150px;
+    transition: height 2s ease-in-out;
+    overflow-y: auto;
+  }
+
+  .dropdown-body.expanded {
+    max-height: 150px; /* Adjust as needed */
   }
 
   .dropdown.show .dropdown-body {
-    max-height: 125px;
+    max-height: 150px;
+    
   }
   
   .dropdown-item {

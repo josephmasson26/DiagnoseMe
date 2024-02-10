@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 
 const Dropdown = ({ options }) => {
     const [display, setDisplay] = useState(false);
+    const [openedOnce, setOpenedOnce] = useState(false);
     const [search, setSearch] = useState("");
     const [filteredOptions, setFilteredOptions] = useState([]);
     const dropdownBodyRef = useRef(null);
@@ -15,6 +16,10 @@ const Dropdown = ({ options }) => {
     }, [search]);
 
     useEffect(() => {
+        if (dropdownBodyRef.current) {
+            dropdownBodyRef.current.style.height = display ? `${dropdownBodyRef.current.scrollHeight}px` : '0px';
+        }
+
         const handleKeyDown = (event) => {
             const key = event.key;
             if (display && /^[a-zA-Z]$/.test(key)) {
@@ -34,26 +39,25 @@ const Dropdown = ({ options }) => {
     }, [search, display]);
 
     const toggleDropdown = () => {
-        setDisplay(!display);
-        if (!display) {
-            dropdownBodyRef.current.style.height = `${dropdownBodyRef.current.scrollHeight}px`;
-        } else {
-            dropdownBodyRef.current.style.height = '0px';
+        if (!openedOnce) {
+            setDisplay(!display);
+            setOpenedOnce(true);
         }
     };
 
     return (
         <div className="dropdown">
-            <div className="dropdown-header" onClick={toggleDropdown}>
+            <div className="dropdown-header" onMouseEnter={toggleDropdown}>
                 {search}
             </div>
-            <div className="dropdown-body" ref={dropdownBodyRef}>
-                {filteredOptions.map((option, i) => (
+            {display &&(
+                <div className={`dropdown-body ${display ? 'expanded' : ''}`} ref={dropdownBodyRef} >                {filteredOptions.map((option, i) => (
                     <div className="dropdown-item" key={i} onClick={() => setSearch(option)}>
                         {option}
                     </div>
                 ))}
             </div>
+            )}
         </div>
     );
 };
