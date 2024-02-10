@@ -8,7 +8,7 @@ Version 3.0.0 don't forget to "pip install -r requirements.txt
 python -c "import flask; print(flask.__version__)" to check flask version on local computer
 '''
 
-API_KEY = os.environ.get('API_KEY')
+API_KEY = os.environ('API_KEY')
 
 genai.configure(api_key=API_KEY)
 
