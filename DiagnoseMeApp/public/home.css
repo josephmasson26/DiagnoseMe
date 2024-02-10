@@ -131,7 +131,7 @@ body, html {
     background: #8b6dc3;
     color: #66dade;
     box-shadow: 0 0 30px #e13c62;
-    text-shadow: 0 0 30px #e13c62;
+    color: #66bcde;
     opacity: 1;
     transform: scale(1.1); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
     
@@ -146,10 +146,11 @@ body, html {
     border-radius: 10px; /* Rounded corners */
     max-height: 200px;
     width: 200px;
+    margin-left: 10px
   }
 
   .dropdown-header {
-    background: #c44561;
+    background: linear-gradient(to right, #c44561, #790d24); /* Different variant */
     padding: 10px;
 
     cursor: pointer;
@@ -160,7 +161,7 @@ body, html {
   }
   
   .dropdown-body {
-    background: #eee;
+    background: linear-gradient(to right, #a8e6d1, #46d9a8); /* Different variant */
     height: 0;
     padding: 10px;
     overflow: hidden;
