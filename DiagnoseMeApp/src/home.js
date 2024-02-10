@@ -16,6 +16,7 @@ import ActionProvider from "./chatbot/ActionProvider";
 
 const App = () => {
 
+    //Insert options for the dropdown HERE
     const options = ["Migraine", "Vomiting", "Bruise", "Stroke", "Sweating", "Option 6", "Option 7", "Option 8", "Option 9", "Option 10"];
 
     return (

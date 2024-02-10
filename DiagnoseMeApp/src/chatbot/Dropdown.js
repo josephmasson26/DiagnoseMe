@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 const Dropdown = ({ options }) => {
     const [display, setDisplay] = useState(false);
     const [search, setSearch] = useState("");
     const [filteredOptions, setFilteredOptions] = useState([]);
+    const dropdownBodyRef = useRef(null);
 
     useEffect(() => {
         setFilteredOptions(
@@ -32,20 +33,27 @@ const Dropdown = ({ options }) => {
         };
     }, [search, display]);
 
+    const toggleDropdown = () => {
+        setDisplay(!display);
+        if (!display) {
+            dropdownBodyRef.current.style.height = `${dropdownBodyRef.current.scrollHeight}px`;
+        } else {
+            dropdownBodyRef.current.style.height = '0px';
+        }
+    };
+
     return (
         <div className="dropdown">
-            <div className="dropdown-header" onClick={() => setDisplay(!display)}>
+            <div className="dropdown-header" onClick={toggleDropdown}>
                 {search}
             </div>
-            {display && (
-                <div className="dropdown-body">
-                    {filteredOptions.map((option, i) => (
-                        <div className="dropdown-item" key={i} onClick={() => setSearch(option)}>
-                            {option}
-                        </div>
-                    ))}
-                </div>
-            )}
+            <div className="dropdown-body" ref={dropdownBodyRef}>
+                {filteredOptions.map((option, i) => (
+                    <div className="dropdown-item" key={i} onClick={() => setSearch(option)}>
+                        {option}
+                    </div>
+                ))}
+            </div>
         </div>
     );
 };

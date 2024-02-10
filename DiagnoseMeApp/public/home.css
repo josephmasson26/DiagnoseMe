@@ -151,15 +151,21 @@ body, html {
     overflow-y: auto; /* Enable vertical scrolling */
     overflow-x: hidden; /* Disable horizontal scrolling */
     max-width: 200px;
+    transition: all 0.3s ease-in-out;
   }
   
   .dropdown-body {
     background: #eee;
+    height: 0;
     padding: 10px;
-    overflow-y: auto; /* Enable vertical scrolling */
-    overflow-x: hidden; /* Disable horizontal scrolling */
+    overflow: hidden;
     max-width: 200px;
     max-height: 200px;
+    transition: height 3s ease-in-out;
+  }
+
+  .dropdown.show .dropdown-body {
+    max-height: 125px;
   }
   
   .dropdown-item {
