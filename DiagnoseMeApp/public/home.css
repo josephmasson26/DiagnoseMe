@@ -2,7 +2,7 @@
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 
   font-size: 0.75em;
-
+  margin-top: -20px;
   width: 100%;
 
   background: linear-gradient(to right, #9f60e1, #5f3a9b);
@@ -11,6 +11,21 @@
   -webkit-text-fill-color: transparent;
   text-align: center;
   color: white;
+}
+
+.github-button {
+  width: 30px;  /* adjust as needed */
+  height: 30px;  /* adjust as needed */
+  padding-bottom: 5px;
+}
+
+h1 {
+	background: linear-gradient(to right, #ca35db 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 2em;
+    margin-top: -10px;
 }
 
 .container {

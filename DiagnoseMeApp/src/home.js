@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import FadeIn from 'react-fade-in';
 import Subtitle from './components/Subtitle';
+import Header from './components/Header';
 import GithubButton from './components/GithubButton';
 import Chatbot from 'react-chatbot-kit'
 import 'react-chatbot-kit/build/main.css'
@@ -44,8 +45,9 @@ const App = () => {
           </div>
 
         <div class='container'>
+            <Header />
             <Subtitle />
-            <GithubButton repoUrl="https://github.com/josephmasson26/diagnoseme" />
+            <GithubButton class="github-button" repoUrl="https://github.com/josephmasson26/diagnoseme" />
 
         </div>
         </FadeIn>
