@@ -1,0 +1,350 @@
+Disease,Fever,Cough,Fatigue,Difficulty Breathing,Gender,Under 20,Between 20-65,Over 65
+Acne,0,0,1,0,0,0,1,0
+Allergic Rhinitis,0,1,0,0,1,0,1,0
+Allergic Rhinitis,1,1,1,0,0,0,1,0
+Allergic Rhinitis,1,0,0,0,0,0,1,0
+Allergic Rhinitis,0,0,1,0,1,0,1,0
+Allergic Rhinitis,0,1,1,0,1,0,1,0
+Allergic Rhinitis,0,1,1,0,0,0,1,0
+Alzheimer's Disease,0,1,0,0,0,0,0,1
+Alzheimer's Disease,0,0,1,0,1,0,0,1
+Alzheimer's Disease,1,0,1,0,1,0,0,1
+Alzheimer's Disease,1,0,1,0,1,0,0,1
+Alzheimer's Disease,0,1,0,0,0,0,0,1
+Anemia,0,0,1,0,0,0,1,0
+Anxiety Disorders,1,1,0,0,1,0,1,0
+Anxiety Disorders,0,0,0,0,0,0,1,0
+Anxiety Disorders,0,0,1,0,0,0,1,0
+Anxiety Disorders,1,1,1,0,0,0,1,0
+Anxiety Disorders,1,0,1,1,0,0,1,0
+Anxiety Disorders,0,1,0,0,1,0,1,0
+Appendicitis,1,0,1,0,0,0,1,0
+Asthma,1,1,1,1,1,0,1,0
+Asthma,0,0,1,1,0,0,1,0
+Asthma,1,0,1,1,0,0,1,0
+Asthma,0,0,0,1,0,0,1,0
+Asthma,1,1,0,1,1,0,1,0
+Asthma,1,1,0,1,1,0,1,0
+Asthma,1,1,0,1,1,0,1,0
+Asthma,1,0,1,0,0,0,1,0
+Asthma,0,1,1,1,1,0,1,0
+Asthma,1,1,1,1,1,0,1,0
+Asthma,0,1,1,1,1,0,1,0
+Asthma,0,1,1,1,1,0,1,0
+Asthma,1,0,1,1,0,0,1,0
+Asthma,1,1,0,1,1,0,1,0
+Asthma,1,1,0,1,0,0,1,0
+Asthma,1,1,0,1,0,0,1,0
+Asthma,1,1,0,1,0,0,1,0
+Asthma,1,1,1,1,1,0,1,0
+Asthma,1,0,0,1,0,0,1,0
+Asthma,1,1,0,1,0,0,1,0
+Asthma,1,1,0,1,0,0,1,0
+Asthma,1,1,1,1,1,0,1,0
+Asthma,1,1,0,1,0,0,1,0
+Atherosclerosis,0,0,1,0,0,0,1,0
+Autism Spectrum Disorder (ASD),0,0,1,0,0,0,1,0
+Bipolar Disorder,0,0,1,0,1,0,1,0
+Bladder Cancer,0,0,1,0,0,0,0,1
+Brain Tumor,0,0,1,0,0,0,1,0
+Breast Cancer,0,0,1,0,0,0,1,0
+Bronchitis,1,0,1,1,0,0,0,1
+Bronchitis,1,1,1,1,0,0,1,0
+Bronchitis,0,1,0,1,1,0,1,0
+Bronchitis,0,0,1,1,0,0,1,0
+Bronchitis,1,1,1,1,0,0,1,0
+Bronchitis,1,1,1,1,0,0,1,0
+Bronchitis,1,1,0,1,1,0,1,0
+Bronchitis,1,1,1,1,0,0,1,0
+Cataracts,0,0,1,0,1,0,1,0
+Cerebral Palsy,0,0,1,1,1,0,1,0
+Chickenpox,0,1,0,0,0,0,1,0
+Chickenpox,0,1,0,0,0,0,1,0
+Cholecystitis,0,0,1,0,0,0,0,1
+Cholera,1,0,1,1,1,0,1,0
+Cholera,1,0,1,1,1,0,1,0
+Chronic Kidney Disease,0,0,1,0,1,0,1,0
+Chronic Obstructive Pulmonary Disease (COPD),1,0,1,1,1,0,0,1
+Chronic Obstructive Pulmonary Disease (COPD),1,0,1,1,1,0,0,1
+Chronic Obstructive Pulmonary Disease (COPD),0,1,1,1,0,0,0,1
+Chronic Obstructive Pulmonary Disease (COPD),0,1,1,1,0,0,0,1
+Chronic Obstructive Pulmonary...,1,1,1,1,0,0,1,0
+Cirrhosis,0,0,1,0,1,0,1,0
+Colorectal Cancer,0,0,1,0,1,0,1,0
+Common Cold,1,1,0,0,1,0,1,0
+Common Cold,1,1,1,0,0,0,1,0
+Common Cold,1,0,1,1,0,0,1,0
+Common Cold,0,0,0,0,1,0,1,0
+Common Cold,1,0,1,1,0,0,1,0
+Common Cold,0,1,1,0,1,0,1,0
+Conjunctivitis (Pink Eye),0,1,0,0,1,0,1,0
+Coronary Artery Disease,0,0,1,0,1,0,1,0
+Coronary Artery Disease,1,1,0,0,0,0,1,0
+Coronary Artery Disease,1,1,0,0,0,0,1,0
+Coronary Artery Disease,0,0,1,0,1,0,1,0
+Coronary Artery Disease,0,0,1,0,1,0,1,0
+Crohn's Disease,1,1,1,0,0,0,1,0
+Crohn's Disease,0,0,1,0,0,0,1,0
+Crohn's Disease,0,0,1,0,1,0,1,0
+Crohn's Disease,1,0,1,0,0,0,1,0
+Crohn's Disease,1,1,1,0,1,0,1,0
+Cystic Fibrosis,0,0,1,1,0,0,1,0
+Dementia,0,0,1,0,1,0,0,1
+Dengue Fever,1,0,1,0,1,0,1,0
+Dengue Fever,1,0,1,0,1,0,1,0
+Depression,0,0,0,0,1,0,1,0
+Depression,0,1,1,0,1,0,1,0
+Depression,1,0,0,1,0,0,1,0
+Depression,1,1,1,1,0,0,1,0
+Depression,0,0,1,0,1,0,1,0
+Depression,0,0,1,0,1,0,1,0
+Diabetes,0,1,0,0,1,0,1,0
+Diabetes,1,0,1,0,1,0,1,0
+Diabetes,0,0,0,0,0,0,1,0
+Diabetes,1,0,1,1,0,0,1,0
+Diabetes,0,1,1,0,0,0,1,0
+Diabetes,1,0,0,0,1,0,1,0
+Diabetes,1,1,1,0,1,0,0,1
+Diabetes,1,1,1,0,0,0,1,0
+Diabetes,0,1,0,0,0,0,1,0
+Diabetes,0,0,1,0,0,0,0,1
+Diverticulitis,0,0,1,0,1,0,0,1
+Down Syndrome,0,0,1,0,1,0,1,0
+"Eating Disorders (Anorexia,...",0,0,1,0,1,0,1,0
+Ebola Virus,1,1,1,1,0,0,1,0
+Ebola Virus,1,1,1,1,0,0,1,0
+Eczema,0,1,0,0,1,0,1,0
+Eczema,0,1,1,0,1,0,1,0
+Eczema,1,0,0,0,1,0,1,0
+Eczema,0,1,1,0,0,0,1,0
+Eczema,0,1,0,0,0,0,1,0
+Eczema,1,0,0,0,0,0,1,0
+Endometriosis,1,0,0,0,0,0,1,0
+Epilepsy,0,0,1,0,0,0,1,0
+Esophageal Cancer,0,0,1,0,0,0,1,0
+Fibromyalgia,0,0,1,0,1,0,1,0
+Gastroenteritis,1,1,1,0,0,0,1,0
+Gastroenteritis,1,0,1,1,0,0,1,0
+Gastroenteritis,0,1,0,0,1,0,1,0
+Gastroenteritis,1,1,1,1,1,0,1,0
+Gastroenteritis,0,0,0,0,0,0,1,0
+Gastroenteritis,1,1,1,0,0,0,1,0
+Glaucoma,0,0,1,0,0,0,1,0
+Gout,1,0,1,0,1,0,0,1
+HIV/AIDS,1,0,0,0,1,0,1,0
+HIV/AIDS,1,0,0,0,1,0,1,0
+Hemophilia,0,0,1,0,1,0,1,0
+Hemophilia,0,0,1,0,1,0,1,0
+Hemorrhoids,0,0,0,0,1,0,1,0
+Hepatitis,1,0,1,0,1,0,1,0
+Hepatitis,1,0,1,0,1,0,1,0
+Hepatitis,1,1,1,1,0,0,1,0
+Hepatitis B,0,1,1,0,0,0,1,0
+Hepatitis B,0,1,1,0,0,0,1,0
+Hyperglycemia,0,0,1,0,0,0,1,0
+Hypertension,0,1,0,0,1,0,1,0
+Hypertension,0,0,0,0,1,0,1,0
+Hypertension,1,0,1,0,0,0,1,0
+Hypertension,0,0,1,0,1,0,1,0
+Hypertension,0,0,0,0,1,0,1,0
+Hypertension,1,0,1,0,0,0,1,0
+Hypertension,1,1,1,0,1,0,1,0
+Hypertension,1,1,0,0,0,0,1,0
+Hypertension,0,1,0,0,1,0,1,0
+Hypertension,1,0,1,0,0,0,1,0
+Hypertensive Heart Disease,0,0,1,0,1,0,1,0
+Hyperthyroidism,0,1,0,0,1,0,1,0
+Hyperthyroidism,0,0,1,0,0,0,1,0
+Hyperthyroidism,1,1,1,0,1,0,1,0
+Hyperthyroidism,0,1,0,0,1,0,1,0
+Hyperthyroidism,1,1,1,0,0,0,1,0
+Hyperthyroidism,0,0,1,0,0,0,1,0
+Hyperthyroidism,1,1,1,0,0,0,1,0
+Hypoglycemia,0,0,1,0,1,0,1,0
+Hypothyroidism,0,0,1,0,1,0,1,0
+Hypothyroidism,0,0,1,0,1,0,1,0
+Hypothyroidism,1,1,1,0,1,0,1,0
+Hypothyroidism,1,1,1,0,1,0,1,0
+Hypothyroidism,1,1,1,0,0,0,1,0
+Hypothyroidism,0,0,1,0,0,0,1,0
+Hypothyroidism,0,0,1,0,0,0,1,0
+Influenza,1,1,1,1,1,0,1,0
+Influenza,1,1,1,1,0,0,1,0
+Influenza,1,1,1,1,1,0,1,0
+Influenza,1,0,1,1,1,1,0,0
+Influenza,1,1,1,0,0,0,1,0
+Influenza,0,0,0,0,0,0,1,0
+Influenza,0,1,0,0,1,0,1,0
+Influenza,1,1,1,1,1,0,1,0
+Kidney Cancer,0,0,1,0,0,0,1,0
+Kidney Cancer,0,0,1,0,0,0,1,0
+Kidney Cancer,0,1,1,1,0,0,1,0
+Kidney Cancer,1,0,0,0,1,0,1,0
+Kidney Cancer,0,1,0,0,0,0,1,0
+Kidney Cancer,1,1,1,0,1,0,1,0
+Kidney Disease,1,1,0,0,0,0,1,0
+Kidney Disease,0,0,1,0,1,0,1,0
+Kidney Disease,1,1,1,1,1,0,1,0
+Kidney Disease,1,0,1,0,1,0,1,0
+Kidney Disease,0,1,0,1,0,0,1,0
+Klinefelter Syndrome,0,0,1,0,1,0,1,0
+Klinefelter Syndrome,0,0,1,0,1,0,1,0
+Liver Cancer,0,0,1,0,1,0,1,0
+Liver Cancer,1,0,1,1,0,0,1,0
+Liver Cancer,1,1,1,1,1,0,1,0
+Liver Cancer,0,1,1,1,0,0,1,0
+Liver Cancer,1,1,1,0,1,0,0,1
+Liver Cancer,1,1,0,0,1,0,1,0
+Liver Disease,1,0,0,1,1,0,1,0
+Liver Disease,0,0,1,0,0,0,1,0
+Liver Disease,0,1,1,0,0,0,1,0
+Liver Disease,0,1,0,1,0,0,1,0
+Liver Disease,1,1,1,0,1,0,1,0
+Lung Cancer,1,0,1,0,1,0,0,1
+Lung Cancer,1,0,1,1,0,0,1,0
+Lung Cancer,1,1,1,0,1,0,0,1
+Lyme Disease,1,0,0,0,0,0,1,0
+Lyme Disease,1,0,0,0,0,0,1,0
+Lymphoma,0,1,0,0,1,0,1,0
+Malaria,1,0,0,0,0,0,1,0
+Malaria,1,0,0,0,0,0,1,0
+Marfan Syndrome,0,0,1,0,0,0,1,0
+Measles,1,1,0,0,1,0,1,0
+Measles,1,1,0,0,1,0,1,0
+Melanoma,1,0,1,0,0,0,1,0
+Migraine,1,0,0,0,0,0,1,0
+Migraine,1,0,0,0,1,0,1,0
+Migraine,0,0,0,0,1,0,1,0
+Migraine,1,0,0,0,1,0,1,0
+Migraine,1,1,1,0,0,0,1,0
+Migraine,0,1,1,0,0,0,1,0
+Migraine,0,0,1,0,1,0,0,1
+Migraine,0,1,1,0,1,0,1,0
+Migraine,0,1,1,1,1,0,1,0
+Migraine,1,1,0,0,0,0,1,0
+Multiple Sclerosis,1,0,0,0,1,0,1,0
+Multiple Sclerosis,0,0,1,0,1,0,1,0
+Multiple Sclerosis,0,1,1,0,0,0,1,0
+Multiple Sclerosis,1,0,0,0,1,0,1,0
+Multiple Sclerosis,0,1,1,0,0,0,1,0
+Mumps,0,0,1,0,0,0,0,1
+Mumps,0,0,1,0,0,0,0,1
+Muscular Dystrophy,0,0,1,0,0,0,1,0
+Myocardial Infarction (Heart...,1,1,1,1,1,0,1,0
+Obsessive-Compulsive Disorde...,0,0,1,0,0,0,1,0
+Osteoarthritis,0,0,1,0,0,0,1,0
+Osteoarthritis,1,1,1,0,0,0,1,0
+Osteoarthritis,1,1,0,0,1,0,1,0
+Osteoarthritis,0,1,0,1,1,0,1,0
+Osteoarthritis,0,0,1,0,0,0,1,0
+Osteoarthritis,1,0,1,1,0,0,1,0
+Osteomyelitis,0,0,1,0,0,0,1,0
+Osteoporosis,0,0,1,0,0,0,1,0
+Osteoporosis,1,0,1,0,1,0,1,0
+Osteoporosis,0,1,1,0,1,0,1,0
+Osteoporosis,0,1,0,0,0,0,1,0
+Osteoporosis,0,1,0,0,0,0,1,0
+Osteoporosis,1,0,1,1,0,0,1,0
+Osteoporosis,1,0,0,0,0,0,0,1
+Osteoporosis,1,0,1,0,0,0,1,0
+Osteoporosis,1,0,1,0,1,0,1,0
+Osteoporosis,0,1,1,0,1,0,0,1
+Osteoporosis,0,1,0,0,1,0,1,0
+Osteoporosis,1,0,0,0,0,0,1,0
+Osteoporosis,0,0,0,1,0,0,1,0
+Osteoporosis,1,1,1,0,1,0,1,0
+Otitis Media (Ear Infection),1,1,1,0,0,0,0,1
+Ovarian Cancer,0,0,1,0,0,0,1,0
+Pancreatic Cancer,0,0,1,0,1,0,1,0
+Pancreatitis,0,1,0,0,0,0,1,0
+Pancreatitis,1,1,1,0,1,0,1,0
+Pancreatitis,0,0,1,0,0,0,1,0
+Pancreatitis,1,0,0,0,1,0,1,0
+Pancreatitis,0,1,1,1,0,0,1,0
+Parkinson's Disease,0,0,1,0,1,0,1,0
+Parkinson's Disease,0,0,1,0,0,0,0,1
+Parkinson's Disease,1,1,0,0,0,0,1,0
+Parkinson's Disease,1,1,0,0,0,0,1,0
+Parkinson's Disease,0,0,1,0,1,0,1,0
+Pneumocystis Pneumonia (PCP),1,1,1,0,1,0,1,0
+Pneumonia,1,1,0,1,0,0,1,0
+Pneumonia,1,1,1,1,1,0,1,0
+Pneumonia,1,1,1,1,0,0,1,0
+Pneumonia,1,1,1,1,1,0,1,0
+Pneumonia,0,1,1,1,1,0,1,0
+Pneumonia,1,1,1,1,0,0,1,0
+Pneumonia,1,0,1,1,1,0,1,0
+Pneumonia,1,1,1,1,1,0,1,0
+Pneumothorax,0,0,1,1,1,0,1,0
+Polio,1,1,1,0,0,0,1,0
+Polycystic Ovary Syndrome (PCOS),1,1,0,0,1,0,1,0
+Prader-Willi Syndrome,0,0,1,0,1,0,1,0
+Prostate Cancer,1,1,0,0,0,0,0,1
+Psoriasis,1,0,0,0,1,0,1,0
+Psoriasis,0,1,1,0,1,0,1,0
+Psoriasis,0,1,0,0,1,0,1,0
+Psoriasis,1,0,0,0,0,0,1,0
+Psoriasis,0,1,1,0,0,0,1,0
+Rabies,1,1,0,0,1,0,1,0
+Rabies,1,1,0,0,1,0,1,0
+Rheumatoid Arthritis,0,0,1,0,1,0,1,0
+Rheumatoid Arthritis,0,1,0,0,1,0,1,0
+Rheumatoid Arthritis,1,0,0,0,0,0,1,0
+Rheumatoid Arthritis,0,1,1,1,1,0,1,0
+Rheumatoid Arthritis,1,1,1,0,0,0,1,0
+Rheumatoid Arthritis,0,0,1,0,1,0,1,0
+Rubella,1,0,1,0,1,0,1,0
+Rubella,1,0,1,0,1,0,1,0
+Schizophrenia,0,1,1,0,0,0,0,1
+Scoliosis,0,0,0,0,1,0,1,0
+Sepsis,1,1,1,0,0,0,1,0
+Sickle Cell Anemia,0,0,1,0,1,0,1,0
+Sinusitis,0,1,1,0,0,0,1,0
+Sleep Apnea,1,0,1,1,0,0,1,0
+Spina Bifida,0,0,1,0,1,0,1,0
+Stroke,0,1,0,0,0,0,0,1
+Stroke,1,1,1,0,1,0,0,1
+Stroke,1,0,1,0,1,0,0,1
+Stroke,1,0,1,0,0,0,0,1
+Stroke,1,0,1,0,0,0,0,1
+Stroke,0,1,0,0,0,0,0,1
+Stroke,1,0,1,0,1,0,0,1
+Stroke,1,0,1,0,1,0,0,1
+Stroke,0,0,1,0,0,0,1,0
+Stroke,1,0,1,0,1,0,0,1
+Stroke,1,0,1,0,1,0,0,1
+Stroke,1,1,1,1,1,0,1,0
+Stroke,1,1,0,0,1,0,1,0
+Stroke,0,1,1,1,0,0,1,0
+Stroke,1,0,1,0,0,0,1,0
+Stroke,1,0,1,0,1,0,0,1
+Systemic Lupus Erythematosus...,0,1,1,0,1,0,1,0
+Testicular Cancer,0,0,1,0,1,0,0,1
+Tetanus,0,0,1,0,0,0,1,0
+Tetanus,0,0,1,0,0,0,1,0
+Thyroid Cancer,0,0,1,0,1,0,1,0
+Tonsillitis,1,1,1,0,1,0,0,1
+Tourette Syndrome,0,0,1,0,0,0,0,1
+Tuberculosis,1,1,1,0,1,0,1,0
+Tuberculosis,1,1,1,1,0,0,1,0
+Tuberculosis,1,1,1,1,0,0,1,0
+Turner Syndrome,0,0,1,0,0,0,1,0
+Turner Syndrome,0,0,1,0,0,0,1,0
+Typhoid Fever,0,1,0,0,0,0,1,0
+Typhoid Fever,0,1,0,0,0,0,1,0
+Ulcerative Colitis,1,1,0,0,1,0,1,0
+Ulcerative Colitis,0,1,1,0,1,0,1,0
+Ulcerative Colitis,1,0,0,0,0,0,1,0
+Ulcerative Colitis,0,0,1,0,0,0,1,0
+Ulcerative Colitis,0,1,1,0,1,0,1,0
+Urinary Tract Infection,1,1,0,1,0,0,1,0
+Urinary Tract Infection,0,1,1,1,1,0,1,0
+Urinary Tract Infection,1,1,1,0,0,0,1,0
+Urinary Tract Infection,1,0,1,0,1,0,1,0
+Urinary Tract Infection,0,0,0,0,1,0,1,0
+Urinary Tract Infection (UTI),0,1,1,0,0,0,1,0
+Urinary Tract Infection (UTI),1,0,0,0,1,0,1,0
+Urinary Tract Infection (UTI),1,0,1,0,0,0,0,1
+Williams Syndrome,0,0,1,0,1,0,0,1
+Zika Virus,0,1,1,0,1,0,1,0
+Zika Virus,0,1,1,0,1,0,1,0
