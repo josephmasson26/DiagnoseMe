@@ -2,19 +2,29 @@
  * Calls the given Gemini model with the given image and/or text
  * parts, streaming output (as a generator function).
  */
-export async function* streamGemini({
-    model = 'gemini-pro-vision', // use 'gemini-pro' for text -> text
-    contents = [],
-  } = {}) {
-    // Send the prompt to the Python backend
-    // Call API defined in main.py
-    let response = await fetch("/api/generate", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ model, contents })
-    });
+// export async function* streamGemini({
+//     model = 'gemini-pro-vision', // use 'gemini-pro' for text -> text
+//     contents = [],
+//   } = {}) {
+//     // Send the prompt to the Python backend
+//     // Call API defined in main.py
+//     let response = await fetch("/api/generate", {
+//       method: "POST",
+//       headers: { "content-type": "application/json" },
+//       body: JSON.stringify({ model, contents })
+//     });
   
-    yield* streamResponseChunks(response);
+//     yield* streamResponseChunks(response);
+//   }
+
+  export function streamGemini(data) {
+    return fetch('http://127.0.0.1:5000', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    });
   }
   
   /**

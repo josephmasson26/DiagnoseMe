@@ -8,7 +8,7 @@ Version 3.0.0 don't forget to "pip install -r requirements.txt
 python -c "import flask; print(flask.__version__)" to check flask version on local computer
 '''
 
-API_KEY = os.environ('API_KEY')
+API_KEY = 'AIzaSyC-_7mZuoHuxGrWS4P750XVMHiuxUuPocU'
 
 genai.configure(api_key=API_KEY)
 
@@ -20,7 +20,7 @@ def index():
     return send_file('web/index.html')
 
 
-@app.route("/api/generate", methods=["POST"])
+@app.route("/", methods=["POST"])
 def generate_api():
     if request.method == "POST":
         try:
@@ -28,9 +28,13 @@ def generate_api():
             content = req_body.get("contents")
             model = genai.GenerativeModel(model_name=req_body.get("model"))
             response = model.generate_content(content, stream=True)
+            print(f"Response from Gemini API: {response}")  # Add this line
+
             def stream():
                 for chunk in response:
-                    yield 'data: %s\n\n' % json.dumps({ "text": chunk.text })
+                    for part in chunk.parts:
+                        print(f"Part from Gemini API: {part.text}")
+                        yield 'data: %s\n\n' % json.dumps({ "text": part.text })
 
             return stream(), {'Content-Type': 'text/event-stream'}
 
@@ -44,4 +48,4 @@ def serve_static(path):
 
 
 if __name__ == "__main__":
-    app.run(port=int(os.environ.get('PORT', 80)))
+    app.run(host='0.0.0.0', port=5000)
