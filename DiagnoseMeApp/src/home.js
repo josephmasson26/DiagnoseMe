@@ -21,7 +21,7 @@ const App = () => {
             </div>
             <div className="box main-box">
                 <div class="box-content">
-                    <Chatbot config={config} actionProvider={ActionProvider} messageParser={MessageParser} />
+                    <Chatbot className="chatbot" config={config} actionProvider={ActionProvider} messageParser={MessageParser} />
                 </div>    
             </div>
             <div className="box side-box">
