@@ -72,7 +72,8 @@ export const ButtonGooey = () => {
           color: #fff;
           z-index: -10;
           display: flex;
-          background: #7e44c5;
+          background: linear-gradient(to right, #782ead, #330867);
+
           align-items: center;
           justify-content: center;
           width: 58px;
