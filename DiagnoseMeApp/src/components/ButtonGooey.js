@@ -83,6 +83,7 @@ export const ButtonGooey = () => {
           transition: transform 0.8s;
           transition-timing-function: bezier(0.2, 0.8, 0.2, 1.2);
           transform: translateX(80%) translateY(0%);
+          cursor: pointer;
         }
 
         .button:hover .bubble {
