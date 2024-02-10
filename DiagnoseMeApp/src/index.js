@@ -10,8 +10,9 @@ const App = () => {
         <div className="App">
             <Header />
             <ButtonGooey />
-            <GithubButton repoUrl="https://github.com/josephmasson26/diagnoseme" />
             <Subtitle />
+            <GithubButton repoUrl="https://github.com/josephmasson26/diagnoseme" />
+            
            
         </div>
     
