@@ -13,7 +13,17 @@ document.querySelector('#submitBtn').addEventListener('click', () => {
                     role: 'user',
                     parts: [{ text: input }]
                 }
-            ]
+            ],
+            "safety_settings": {
+                "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                "threshold": "BLOCK_LOW_AND_ABOVE"
+            },
+            "generation_config": {
+                "temperature": 0.2,
+                "topP": 0.8,
+                "topK": 40,
+                "maxOutputTokens": 200,
+            }
         })
     })
     .then(response => response.text())
