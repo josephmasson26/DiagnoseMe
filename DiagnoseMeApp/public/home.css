@@ -1,14 +1,23 @@
 .subtitle {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 
-  font-size: 0.75em;
+  font-size: 0.5em;
   margin-top: -20px;
   width: 100%;
 
-  background: linear-gradient(to right, #9f60e1, #5f3a9b);
+  background: linear-gradient(to right, #685896, #361e7c);
   border-radius: 15px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: center;
+  color: white;
+}
+
+p {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.75em;
+  margin-top: 10px;
+  width: 100%;
   text-align: center;
   color: white;
 }
@@ -20,12 +29,13 @@
 }
 
 h1 {
-	background: linear-gradient(to right, #ca35db 0%, #330867 100%);
+	background: linear-gradient(to right, #91dfe9 0%, #188b9a 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.8em;
     margin-top: -10px;
+    opacity: 1;
 }
 
 .container {
@@ -101,7 +111,7 @@ body, html {
     background: #b94ff7;
     color: #66bcde;
     box-shadow: 0 0 30px #e13c62;
-    text-shadow: 0 0 15px #e13c62;
+    
     opacity: 1;
     transform: scale(1.1); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
 
@@ -110,16 +120,72 @@ body, html {
   .box:nth-child(3) {
     background: linear-gradient(to right, #8cb5f5, #e2c4f6);
     opacity: 0.5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
   }
 
   .box:nth-child(3):hover {
     background: #8b6dc3;
     color: #66dade;
     box-shadow: 0 0 30px #e13c62;
-    text-shadow: 0 0 30px #e13c62;
+    color: #66bcde;
     opacity: 1;
     transform: scale(1.1); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
     
+  }
+
+  .dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px; /* Rounded corners */
+    max-height: 200px;
+    width: 200px;
+    margin-left: 10px
+  }
+
+  .dropdown-header {
+    background: linear-gradient(to right, #c44561, #790d24); /* Different variant */
+    padding: 10px;
+
+    cursor: pointer;
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    max-width: 200px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .dropdown-body {
+    background: linear-gradient(to right, #a8e6d1, #46d9a8); /* Different variant */
+    height: 0;
+    padding: 10px;
+    overflow: hidden;
+    max-width: 200px;
+    max-height: 150px;
+    transition: height 2s ease-in-out;
+    overflow-y: auto;
+  }
+
+  .dropdown-body.expanded {
+    max-height: 150px; /* Adjust as needed */
+  }
+
+  .dropdown.show .dropdown-body {
+    max-height: 150px;
+    
+  }
+  
+  .dropdown-item {
+    padding: 5px 0;
+    cursor: pointer;
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    max-width: 200px;
   }
 
   .main-box {
@@ -171,6 +237,47 @@ body, html {
     opacity: 1;
     overflow: auto
   }
-  
+
+.submit-diagnosis-button {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 40px;
+  font-size: 1.5em;
+  background: linear-gradient(to right, #d2aafc, #7e0955);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  transition: transform 2s ease;
+}
+
+.submit-diagnosis-button:hover {
+  background: #37034d;
+  transform: scale(1.1);
+}
+ 
+
+.reset-button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+
+  font-size: 0.5em;
+  background: linear-gradient(to right, #d2aafc, #7e0955);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  transition: transform 2s ease;
+}
+
+.reset-button:hover {
+  background: #37034d;
+  transform: scale(1.1);
+}
 
   
+
+
