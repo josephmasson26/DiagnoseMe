@@ -6,7 +6,8 @@ To Run Frontend:
 - npm start
 
 To Run Backend:
-- pip install
+- pip install google-generativeai
+- pip install flask
 - python3 main.py
 
 note that --force because the nice frontend needs some stuff 
