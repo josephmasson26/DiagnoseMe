@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Header from './components/Header';
 import ButtonGooey from './components/ButtonGooey';
 import GithubButton from './components/GithubButton';
+import Subtitle from './components/Subtitle';
 
 const App = () => {
     return (
@@ -10,6 +11,7 @@ const App = () => {
             <Header />
             <ButtonGooey />
             <GithubButton repoUrl="https://github.com/josephmasson26/diagnoseme" />
+            <Subtitle />
         </div>
     
     );
