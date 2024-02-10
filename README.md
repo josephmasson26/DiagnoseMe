@@ -8,3 +8,5 @@ To Run Frontend:
 To Run Backend:
 - pip install
 - python3 main.py
+
+note that --force because the nice frontend needs some stuff 
