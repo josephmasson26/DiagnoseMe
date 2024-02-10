@@ -153,6 +153,7 @@ body, html {
     min-width: 150px; /* Makes the chatbot fill the width of the .main-box */
     height: 100%; /* Makes the chatbot fill the height of the .main-box */
     opacity: 1;
+    overflow: auto
   }
   
   
