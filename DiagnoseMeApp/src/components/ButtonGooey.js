@@ -10,8 +10,9 @@ export const ButtonGooey = () => {
       <div className="wrapper">
         <button className="button">
           get started
-          <div className="bubble">
+            <div className="bubble" onClick={() => window.location.href = 'home.html'}>
             <ArrowRightIcon className="h-8 w-8" />
+            
           </div>
         </button>
       </div>
