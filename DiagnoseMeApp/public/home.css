@@ -122,6 +122,7 @@ body, html {
 
   .main-box {
     grid-row: span 2;
+    grid-column: 2;
     position: relative;
     padding: 20px;
     background: linear-gradient(to right, #6a3093, #a044ff); /* Different variant */
@@ -135,9 +136,9 @@ body, html {
   min-height: 80vh;
   min-width: 100vw;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
     height: 100%;
     padding: 20px;
     margin-bottom: 10px;
