@@ -1,4 +1,3 @@
-# DiagnoseMe
 ![logo](https://github.com/josephmasson26/DiagnoseMe/assets/122403630/78efe57d-1eae-4af5-ab3c-6671acb88eec)
 
 ## Features
