@@ -14,7 +14,6 @@ genai.configure(api_key=API_KEY)
 
 app = Flask(__name__)
 
-
 @app.route("/")
 def index():
     return send_file('web/index.html')
@@ -29,6 +28,7 @@ def generate_api():
             model = genai.GenerativeModel(model_name=req_body.get("model"))
             response = model.generate_content(content, stream=True)
             print(f"Response from Gemini API: {response}")  # Add this line
+            print(os.environ['API_KEY'])
 
             def stream():
                 for chunk in response:
