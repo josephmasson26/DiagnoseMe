@@ -135,3 +135,4 @@ dist
 
 # Flask backend environment variables
 backend/.env
+.vscode/settings.json
