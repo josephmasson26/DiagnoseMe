@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom';
 import Header from './components/Header';
 import GithubButton from './components/GithubButton';
 import Subtitle from './components/Subtitle';
+import ResultHeader from './components/ResultHeader';
 
 const App = () => {
     return (
         <div className="App">
+
+            <ResultHeader />
+
+
+
             <div class='container'>
             <Header />
             <Subtitle />
