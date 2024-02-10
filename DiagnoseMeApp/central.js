@@ -9,7 +9,9 @@ submitBtn.onclick = async (ev) => {
   greeting.textContent = 'Generating...';
 
   try {
-    // Assemble the prompt by combining the text with the chosen image
+    
+    // let initialPrompt = `Gemini, keep your response to one paragraph or less, my query is: 
+    // `;
     let contents = [
       {
         role: 'user',
@@ -19,7 +21,7 @@ submitBtn.onclick = async (ev) => {
       }
     ];
 
-    // Call the gemini-pro-vision model, and get a stream of results
+    // Call the gemini-pro, and get a stream of results
     let stream = streamGemini({
       model: 'gemini-pro',
       contents,

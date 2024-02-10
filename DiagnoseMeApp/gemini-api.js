@@ -1,22 +1,4 @@
-/**
- * Calls the given Gemini model with the given image and/or text
- * parts, streaming output (as a generator function).
- */
-// export async function* streamGemini({
-//     model = 'gemini-pro-vision', // use 'gemini-pro' for text -> text
-//     contents = [],
-//   } = {}) {
-//     // Send the prompt to the Python backend
-//     // Call API defined in main.py
-//     let response = await fetch("/api/generate", {
-//       method: "POST",
-//       headers: { "content-type": "application/json" },
-//       body: JSON.stringify({ model, contents })
-//     });
-  
-//     yield* streamResponseChunks(response);
-//   }
-
+  // Function to stream data to a Gemini API endpoint
   export function streamGemini(data) {
     return fetch('http://127.0.0.1:5000', {
       method: 'POST',
@@ -26,15 +8,16 @@
       body: JSON.stringify(data)
     });
   }
-  
+
   /**
-   * A helper that streams text output chunks from a fetch() response.
+   * A helper function that streams text output chunks from a fetch() response.
    */
   async function* streamResponseChunks(response) {
     let buffer = '';
-  
+
     const CHUNK_SEPARATOR = '\n\n';
-  
+
+    // Function to process the buffer and yield chunks
     let processBuffer = async function* (streamDone = false) {
       while (true) {
         let flush = false;
@@ -46,7 +29,7 @@
         if (chunkSeparatorIndex < 0) {
           break;
         }
-  
+
         let chunk = buffer.substring(0, chunkSeparatorIndex);
         buffer = buffer.substring(chunkSeparatorIndex + CHUNK_SEPARATOR.length);
         chunk = chunk.replace(/^data:\s*/, '').trim();
@@ -63,7 +46,7 @@
         if (flush) break;
       }
     };
-  
+
     const reader = response.body.getReader();
     try {
       while (true) {
@@ -76,7 +59,6 @@
     } finally {
       reader.releaseLock();
     }
-  
+
     yield* processBuffer(true);
   }
-  
