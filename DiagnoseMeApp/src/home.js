@@ -25,7 +25,13 @@ const App = () => {
           <div className="grid">
             <div className="box side-box">
                 <div class="box-content">
-                    1
+                <div class='container'>
+            
+            <Header />
+            <Subtitle />
+            <GithubButton class="github-button" repoUrl="https://github.com/josephmasson26/diagnoseme" />
+
+        </div>
                 </div>    
             </div>
             <div className="box main-box">
@@ -43,13 +49,8 @@ const App = () => {
 
           </div>
 
-        <div class='container'>
-            <SubmitButton />
-            <Header />
-            <Subtitle />
-            <GithubButton class="github-button" repoUrl="https://github.com/josephmasson26/diagnoseme" />
-
-        </div>
+          <SubmitButton />
+        
         </FadeIn>
         
       );

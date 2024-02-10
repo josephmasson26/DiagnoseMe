@@ -236,11 +236,24 @@ body, html {
     overflow: auto
   }
 
-  .submit-button {
-    width: 30px;  /* adjust as needed */
-    height: 30px;  /* adjust as needed */
-    padding-bottom: 5px;
-  }
+.submit-diagnosis-button {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 40px;
+  font-size: 1.5em;
+  background: linear-gradient(to right, #d2aafc, #7e0955);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  transition: transform 2s ease;
+}
+
+.submit-diagnosis-button:hover {
+  background: #37034d;
+  transform: scale(1.1);
+}
   
 
   
