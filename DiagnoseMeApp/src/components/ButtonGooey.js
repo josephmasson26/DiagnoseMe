@@ -34,7 +34,7 @@ export const ButtonGooey = () => {
             <feColorMatrix
               in="blur"
               mode="matrix"
-              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10"
+              values="0 0 1 0 0  0 1 1 0 0  1 0 1 0 1  0 0 0 20 -10"
 
               result="gooey"
             />
