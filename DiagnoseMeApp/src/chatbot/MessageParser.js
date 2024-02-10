@@ -21,11 +21,16 @@ const MessageParser = ({ children, actions }) => {
         ]
       })
     })
-    .then(response => response.text()) // Extracting the response as text
-    .then(data => {
-      const jsonString = data.replace('data: ', ''); // Removing 'data: ' prefix from the response
-      const parsedData = JSON.parse(jsonString); // Parsing the response as JSON
-      actions.setApiResponse(parsedData.text); // Updating the API response using the parsed data
+    .then(response => {
+      const reader = response.body.getReader();
+      reader.read().then(function process({ done, value }) {
+        if (done) return;
+        const chunk = new TextDecoder().decode(value);
+        const jsonString = chunk.replace('data: ', '');
+        const parsedData = JSON.parse(jsonString);
+        actions.setApiResponse(parsedData.text);
+        return reader.read().then(process);
+      });
     })
     .catch(error => console.error('Error:', error)); // Handling any errors that occur during the request
   };
