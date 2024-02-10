@@ -33,12 +33,14 @@ export const ButtonGooey = () => {
               in="blur"
               mode="matrix"
               values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10"
+
               result="gooey"
             />
             <feComposite in="SourceGraphic" in2="gooey" operator="atop" />
           </filter>
         </defs>
       </svg>
+
 
       <style jsx>{`
         .wrapper {
@@ -51,7 +53,7 @@ export const ButtonGooey = () => {
         }
 
         .button {
-          background: #000;
+          background: #7e44c5;
           color: #eee;
           display: inline-flex;
           font-weight: bold;
@@ -68,7 +70,7 @@ export const ButtonGooey = () => {
           color: #fff;
           z-index: -10;
           display: flex;
-          background: #000;
+          background: #7e44c5;
           align-items: center;
           justify-content: center;
           width: 58px;
