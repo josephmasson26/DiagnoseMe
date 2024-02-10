@@ -1,19 +1,14 @@
-'''
-Version 3.0.0 don't forget to "pip install -r requirements.txt
-python -c "import flask; print(flask.__version__)" to check flask version on local computer
-'''
-
-
 import json
 import os
 
 import google.generativeai as genai
 from flask import Flask, jsonify, request, send_file, send_from_directory
+'''
+Version 3.0.0 don't forget to "pip install -r requirements.txt
+python -c "import flask; print(flask.__version__)" to check flask version on local computer
+'''
 
-# 🔥 FILL THIS OUT FIRST! 🔥
-# 🔥 GET YOUR GEMINI API KEY AT 🔥
-# 🔥 https://makersuite.google.com/app/apikey 🔥
-API_KEY = 'AIzaSyC-_7mZuoHuxGrWS4P750XVMHiuxUuPocU'
+API_KEY = os.environ.get('API_KEY')
 
 genai.configure(api_key=API_KEY)
 
@@ -28,12 +23,6 @@ def index():
 @app.route("/api/generate", methods=["POST"])
 def generate_api():
     if request.method == "POST":
-        if API_KEY == 'TODO':
-            return jsonify({ "error": '''
-                To get started, get an API key at
-                https://makersuite.google.com/app/apikey and enter it in
-                main.py
-                '''.replace('\n', '') })
         try:
             req_body = request.get_json()
             content = req_body.get("contents")
