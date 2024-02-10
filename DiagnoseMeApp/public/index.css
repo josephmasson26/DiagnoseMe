@@ -33,3 +33,8 @@ h1 {
     color: white;
 }
 
+.button {
+    /* existing styles... */
+    border: none;
+}
+
