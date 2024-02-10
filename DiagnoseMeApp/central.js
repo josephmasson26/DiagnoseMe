@@ -4,8 +4,6 @@ let submitBtn = document.querySelector('#submitBtn');
 let promptInput = document.querySelector('#myTextBox');
 let greeting = document.querySelector('#greeting');
 
-let contents = []; // Move contents array outside the onclick function to maintain state
-
 submitBtn.onclick = async (ev) => {
   ev.preventDefault();
   greeting.textContent = 'Generating...';
@@ -15,16 +13,16 @@ submitBtn.onclick = async (ev) => {
     `
     Gemini, you are required keep your single paragraph response to one contiguous block of text.
     `;
+    let contents = [
+      {
+        role: 'user',
+        parts: [
+          { text: context + promptInput.value }
+        ]
+      }
+    ];
 
-    // Add user's message to contents
-    contents.push({
-      role: 'user',
-      parts: [
-        { text: context + promptInput.value }
-      ]
-    });
-
-    console.log('Sending message to Gemini:', contents[contents.length - 1].parts[0].text);
+    console.log('Sending message to Gemini:', contents[0].parts[0].text);
 
     // Call the gemini-pro, and get a stream of results
     let stream = streamGemini({
@@ -38,15 +36,8 @@ submitBtn.onclick = async (ev) => {
       buffer.push(chunk);
       greeting.textContent = buffer.join('');
     }
-
-    // Add model's response to contents
-    contents.push({
-      role: 'model',
-      parts: [
-        { text: buffer.join('') }
-      ]
-    });
   } catch (e) {
     greeting.textContent += ' ' + e;
   }
 };
+
