@@ -3,6 +3,7 @@ import FadeIn from 'react-fade-in';
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 
 
+
 export const ButtonGooey = () => {
   return (
     <FadeIn delay = {600} transitionDuration={2000}>

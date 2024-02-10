@@ -12,6 +12,7 @@ const App = () => {
             <ButtonGooey />
             <GithubButton repoUrl="https://github.com/josephmasson26/diagnoseme" />
             <Subtitle />
+            <a href="home.html">profile</a>
         </div>
     
     );
