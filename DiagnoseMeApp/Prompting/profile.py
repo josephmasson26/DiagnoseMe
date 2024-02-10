@@ -23,18 +23,29 @@ def randomize_symptom(x):
         return 0
 
 def create_profile():
- 
-    row, name, disease = extract_data()
-    row.drop(row.columns[0], axis=1, inplace=True)
 
-    columns_greater_than_zero = row.loc[:, (row > 0).any()]
+    while True:
+    
+        row, name, disease = extract_data()
+        
+        row.drop(row.columns[0], axis=1, inplace=True)
 
-    symptoms_all = columns_greater_than_zero.applymap(randomize_symptom)
-    symptoms = symptoms_all.loc[:, (symptoms_all > 0).any()]
+        columns_greater_than_zero = row.loc[:, (row > 0).any()]
 
-    return disease, symptoms
+        symptoms_all = columns_greater_than_zero.applymap(randomize_symptom)
+        symptoms = symptoms_all.loc[:, (symptoms_all > 0).any()]
+        symptoms = symptoms.columns.tolist()
 
-print(create_profile())
+        if disease in symptoms:
+            symptoms.remove(disease)
+
+        if len(symptoms) >= 3:
+            break
+
+    for i in range(len(symptoms)):
+        symptoms[i] = symptoms[i].replace("_", " ")
+
+    return name, disease, symptoms
 
 
 
