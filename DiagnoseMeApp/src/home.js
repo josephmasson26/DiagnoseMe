@@ -25,21 +25,13 @@ const App = () => {
                     <Chatbot className="chatbot" config={config} actionProvider={ActionProvider} messageParser={MessageParser} />
                 </div>    
             </div>
-            <div className="box side-box">
-                <div class="box-content">
-                    3
-                </div>
-            </div>
+
             <div className="box side-box">
                 <div class="box-content">
                     4
                 </div>
             </div>
-            <div className="box side-box">
-                <div class="box-content">
-                    5
-                </div>
-            </div>
+            
             
 
           </div>
