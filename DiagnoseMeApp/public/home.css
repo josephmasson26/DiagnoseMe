@@ -114,7 +114,7 @@ body, html {
 
   .box:nth-child(3):hover {
     background: #8b6dc3;
-    color: #66bcde;
+    color: #66dade;
     box-shadow: 0 0 30px #e13c62;
     text-shadow: 0 0 30px #e13c62;
     opacity: 1;
@@ -157,6 +157,10 @@ body, html {
     box-sizing: border-box;
   }
 
+  .react-chatbot-kit-chat-container {
+    min-width: 400px;  /* adjust as needed */
+    height: 100%;  /* adjust as needed */
+  }
 
   .chatbot {
     position: absolute; /* Positions the chatbot relative to the .main-box */
@@ -168,4 +172,5 @@ body, html {
     overflow: auto
   }
   
+
   
