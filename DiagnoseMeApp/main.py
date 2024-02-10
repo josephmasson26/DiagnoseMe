@@ -32,8 +32,9 @@ def generate_api():
 
             def stream():
                 for chunk in response:
-                    print(f"Chunk from Gemini API: {chunk.text}")  # Add this line
-                    yield 'data: %s\n\n' % json.dumps({ "text": chunk.text })
+                    for part in chunk.parts:
+                        print(f"Part from Gemini API: {part.text}")
+                        yield 'data: %s\n\n' % json.dumps({ "text": part.text })
 
             return stream(), {'Content-Type': 'text/event-stream'}
 
