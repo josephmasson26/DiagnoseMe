@@ -139,7 +139,7 @@ body, html {
     box-shadow: 0 0 30px #e13c62;
     text-shadow: 0 0 30px #e13c62;
     opacity: 1;
-    transform: scale(1.1); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
+    transform: scale(1.05); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
     z-index: 1;
   }
 
