@@ -1,10 +1,9 @@
 import numpy as np
 import pandas as pd
 
-
 def extract_data():
     # Read the diseases CSV file
-    diseases_data = pd.read_csv('Diseases-Hep.csv')
+    diseases_data = pd.read_csv('disease_vector.csv')
     names_data = pd.read_csv('SSA_Names_DB.csv')
 
 
@@ -15,24 +14,25 @@ def extract_data():
     
     return row, name, disease 
 
+def randomize_symptom(x):
+
+    random_value = np.random.rand()
+    if random_value < x :
+        return 1
+    else:
+        return 0
+
 def create_profile():
  
     row, name, disease = extract_data()
-    print(row)
-    row.drop(row.columns[0])
-    # row_numeric = row.select_dtypes(include=[np.number, 'boolean'])
+    row.drop(row.columns[0], axis=1, inplace=True)
 
-    print("row: ", row)
+    columns_greater_than_zero = row.loc[:, (row > 0).any()]
 
-    # for col in row_numeric.columns:
-    #     row_numeric[col] = np.random.rand() < row_numeric[col]
-
-    # row_numeric = row_numeric.astype(int)
-
-    # symptoms = row_numeric.columns[(row_numeric.iloc[0] > 0)].tolist()
+    symptoms_all = columns_greater_than_zero.applymap(randomize_symptom)
+    symptoms = symptoms_all.loc[:, (symptoms_all > 0).any()]
 
     return disease, symptoms
-
 
 print(create_profile())
 
