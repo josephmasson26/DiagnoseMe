@@ -1,9 +1,18 @@
 import { createChatBotMessage } from 'react-chatbot-kit';
+import { ICustomStyles } from 'react-chatbot-kit';
 
 const config = {
   botName: "DiagnoseMeBot",
   initialMessages: [createChatBotMessage(`Hello world`)],
   
+  customStyles: ICustomStyles ={
+    botMessageBox: {
+      backgroundColor: '#a044ff',
+    },
+    chatButton: {
+      backgroundColor: '#a044ff',
+    },
+  },
 };
 
 export default config;
