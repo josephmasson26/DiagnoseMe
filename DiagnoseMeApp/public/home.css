@@ -110,6 +110,11 @@ body, html {
   .box:nth-child(3) {
     background: linear-gradient(to right, #8cb5f5, #e2c4f6);
     opacity: 0.5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
   }
 
   .box:nth-child(3):hover {
@@ -120,6 +125,40 @@ body, html {
     opacity: 1;
     transform: scale(1.1); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
     
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    border-radius: 10px; /* Rounded corners */
+    max-height: 200px;
+    width: 150px;
+  }
+
+  .dropdown-header {
+    background: #ccc;
+    padding: 10px;
+    cursor: pointer;
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    max-width: 200px;
+  }
+  
+  .dropdown-body {
+    background: #eee;
+    padding: 10px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    max-width: 200px;
+    max-height: 200px;
+  }
+  
+  .dropdown-item {
+    padding: 5px 0;
+    cursor: pointer;
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    max-width: 200px;
   }
 
   .main-box {
@@ -174,3 +213,5 @@ body, html {
   
 
   
+
+
