@@ -44,7 +44,7 @@ const App = () => {
 
             <div className="box side-box">
                 <div class="box-content">
-                    <p>hover and type in your diagnosis</p>
+                    <p>click and type in your diagnosis: </p>
                     <Dropdown options={options} />
                 </div>
             </div>
