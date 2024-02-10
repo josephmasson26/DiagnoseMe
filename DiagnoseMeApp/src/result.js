@@ -7,6 +7,7 @@ import ResultHeader from './components/ResultHeader';
 import ReactStars from 'react-stars';
 import styled from 'styled-components';
 import FadeIn from 'react-fade-in/lib/FadeIn';
+import ResetButton from './components/ResetButton';
 
 // Change this to get a new rating
 const rating = 3;
@@ -18,7 +19,7 @@ const App = () => {
     return (
         <div className="App">
 
-            <ResultHeader />
+            {/* <ResultHeader />
             <FadeIn delay={500} transitionDuration={2000}>
                 <ReactStars count={5} value={rating} size={50} color2={"#ca35db"} edit={false}/>
             </FadeIn>
@@ -32,8 +33,36 @@ const App = () => {
             <Subtitle />
             <GithubButton class="github-button" repoUrl="https://github.com/josephmasson26/diagnoseme" />
 
-            </div>
-  
+            </div> */}
+
+            <FadeIn delay={300} transitionDuration={2000}>
+                <div className="grid">
+                    <div className="box main-box">
+                        <div class="box-content">
+                            Results and Stars
+                        </div>
+                    </div>  
+                    
+                    <div className="box side-box">
+                        <div class="box-content">
+                           Text results
+                        </div>
+                    </div>
+
+                    <div className="box side-box">
+                        <div class="box-content">
+                            Container
+                        </div>
+                    </div>
+                
+                </div>
+
+                <ResetButton />
+
+            </FadeIn>
+                
+
+                                
         </div>
     
     );
