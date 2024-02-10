@@ -1,0 +1,176 @@
+.subtitle {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  
+    font-size: 0.75em;
+    margin-top: -20px;
+    width: 100%;
+  
+    background: linear-gradient(to right, #9f60e1, #5f3a9b);
+    border-radius: 15px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    color: white;
+  }
+  
+  .github-button {
+    width: 30px;  /* adjust as needed */
+    height: 30px;  /* adjust as needed */
+    padding-bottom: 5px;
+  }
+  
+  h1 {
+      background: linear-gradient(to right, #ca35db 0%, #330867 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      font-size: 2em;
+      margin-top: -10px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: -5px;
+  }
+  
+  body {
+      background: url('./assets/images/background2.jpeg') no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      margin: 0;
+      height: 100%;
+  
+      align-items: center;
+      
+  }
+  
+  body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden; /* Prevents scrollbars */
+    }
+  
+  
+    
+    .box {
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.5); /* White background with 50% transparency */
+   
+      opacity: 0.6;
+      color: white;
+      border-radius: 10px; /* Rounded corners */
+      transition: background 3s ease; /* Smooth transition */
+      transition: transform 2s ease;
+    }
+  
+    .box::before{
+      transition: 2s;
+      transform: scale(.9);
+      z-index: -1;
+    }
+  
+    .box :hover::before {
+      transform: scale(1.1);
+      box-shadow: 0 0 30px #e13c62;
+    }
+  
+    .box-content {
+      color: #fff;
+      font-size: 20px;
+      opacity: 1;
+    }
+  
+    .box:nth-child(1) {
+      background: linear-gradient(to right, #ca35db, #d99dfd);
+      opacity: 0.5;
+    }
+  
+    .box:nth-child(1):hover {
+      background: #b94ff7;
+      color: #66bcde;
+      box-shadow: 0 0 30px #e13c62;
+      text-shadow: 0 0 15px #e13c62;
+      opacity: 1;
+      transform: scale(1.1); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
+  
+    }
+    
+    .box:nth-child(3) {
+      background: linear-gradient(to right, #8cb5f5, #e2c4f6);
+      opacity: 0.5;
+    }
+  
+    .box:nth-child(3):hover {
+      background: #8b6dc3;
+      color: #66bcde;
+      box-shadow: 0 0 30px #e13c62;
+      text-shadow: 0 0 30px #e13c62;
+      opacity: 1;
+      transform: scale(1.1); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
+      
+    }
+  
+    .main-box {
+      grid-row: span 2;
+      grid-column: 2;
+      position: relative;
+      padding: 20px;
+      background: linear-gradient(to right, #c1bafd, #330867); /* Different variant */
+      opacity: 0.5;
+      padding-left: 5px;
+      transition: transform 2s ease; z-index: 0s;
+    }
+  
+    .main-box:hover {
+      background: #460b8f; /* Different variant */
+      color: #66bcde;
+      box-shadow: 0 0 30px #e13c62;
+      text-shadow: 0 0 30px #e13c62;
+      opacity: 1;
+      transform: scale(1.05); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
+      z-index: 1;
+    }
+  
+  .grid {
+    min-height: 80vh;
+    min-width: 100vw;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: repeat(2, 1fr);
+      gap: 15px;
+      height: 100%;
+      padding: 30px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+  
+    .react-chatbot-kit-chat-container {
+      min-width: 400px;  /* adjust as needed */
+      height: 100%;  /* adjust as needed */
+    }
+  
+    .chatbot {
+      position: absolute; /* Positions the chatbot relative to the .main-box */
+      top: 0;
+      left: 0;
+      min-width: 150px; /* Makes the chatbot fill the width of the .main-box */
+      height: 100%; /* Makes the chatbot fill the height of the .main-box */
+      opacity: 1;
+      overflow: auto
+    }
+    
+  
+    

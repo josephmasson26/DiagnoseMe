@@ -7,7 +7,7 @@ const SubmitButton = () => {
     };
 
     return (
-    <FadeIn delay={1500} transitionDuration={2000}>
+    <FadeIn delay={100} transitionDuration={2000}>
         <button className="submit-diagnosis-button" onClick={handleClick}>
             Submit Diagnosis
         </button>
