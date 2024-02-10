@@ -1,11 +1,11 @@
 .subtitle {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 
-  font-size: 0.75em;
+  font-size: 0.5em;
   margin-top: -20px;
   width: 100%;
 
-  background: linear-gradient(to right, #9f60e1, #5f3a9b);
+  background: linear-gradient(to right, #685896, #361e7c);
   border-radius: 15px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -29,12 +29,13 @@ p {
 }
 
 h1 {
-	background: linear-gradient(to right, #ca35db 0%, #330867 100%);
+	background: linear-gradient(to right, #91dfe9 0%, #188b9a 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.8em;
     margin-top: -10px;
+    opacity: 1;
 }
 
 .container {
@@ -110,7 +111,7 @@ body, html {
     background: #b94ff7;
     color: #66bcde;
     box-shadow: 0 0 30px #e13c62;
-    text-shadow: 0 0 15px #e13c62;
+    
     opacity: 1;
     transform: scale(1.1); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
 
@@ -254,7 +255,27 @@ body, html {
   background: #37034d;
   transform: scale(1.1);
 }
-  
+ 
+
+.reset-button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+
+  font-size: 0.5em;
+  background: linear-gradient(to right, #d2aafc, #7e0955);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  transition: transform 2s ease;
+}
+
+.reset-button:hover {
+  background: #37034d;
+  transform: scale(1.1);
+}
 
   
 

@@ -7,6 +7,7 @@ import GithubButton from './components/GithubButton';
 import Dropdown from './chatbot/Dropdown';
 import SubmitButton from './components/SubmitButton';
 
+
 import Chatbot from 'react-chatbot-kit'
 import 'react-chatbot-kit/build/main.css'
 
@@ -14,6 +15,7 @@ import 'react-chatbot-kit/build/main.css'
 import config from "./configs/chatbotConfig";
 import MessageParser from "./chatbot/MessageParser";
 import ActionProvider from "./chatbot/ActionProvider";
+import ResetButton from './components/ResetButton';
 
 const App = () => {
 
@@ -30,7 +32,7 @@ const App = () => {
             <Header />
             <Subtitle />
             <GithubButton class="github-button" repoUrl="https://github.com/josephmasson26/diagnoseme" />
-
+            <ResetButton />
         </div>
                 </div>    
             </div>
