@@ -5,6 +5,7 @@ import Subtitle from './components/Subtitle';
 import Header from './components/Header';
 import GithubButton from './components/GithubButton';
 import Dropdown from './chatbot/Dropdown';
+import SubmitButton from './components/SubmitButton';
 
 import Chatbot from 'react-chatbot-kit'
 import 'react-chatbot-kit/build/main.css'
@@ -35,7 +36,7 @@ const App = () => {
 
             <div className="box side-box">
                 <div class="box-content">
-                    <p>type in your diagnosis</p>
+                    <p>hover and type in your diagnosis</p>
                     <Dropdown options={options} />
                 </div>
             </div>
@@ -43,6 +44,7 @@ const App = () => {
           </div>
 
         <div class='container'>
+            <SubmitButton />
             <Header />
             <Subtitle />
             <GithubButton class="github-button" repoUrl="https://github.com/josephmasson26/diagnoseme" />

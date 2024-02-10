@@ -13,9 +13,9 @@
   color: white;
 }
 
-.p {
+p {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 0.2 em;
+  font-size: 0.75em;
   margin-top: 10px;
   width: 100%;
   text-align: center;
@@ -137,16 +137,20 @@ body, html {
   }
 
   .dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     display: inline-block;
     border-radius: 10px; /* Rounded corners */
     max-height: 200px;
-    width: 190px;
+    width: 200px;
   }
 
   .dropdown-header {
-    background: #ccc;
+    background: #c44561;
     padding: 10px;
+
     cursor: pointer;
     overflow-y: auto; /* Enable vertical scrolling */
     overflow-x: hidden; /* Disable horizontal scrolling */
@@ -230,6 +234,12 @@ body, html {
     height: 100%; /* Makes the chatbot fill the height of the .main-box */
     opacity: 1;
     overflow: auto
+  }
+
+  .submit-button {
+    width: 30px;  /* adjust as needed */
+    height: 30px;  /* adjust as needed */
+    padding-bottom: 5px;
   }
   
 
