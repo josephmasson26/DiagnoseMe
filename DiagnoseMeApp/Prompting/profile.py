@@ -47,6 +47,30 @@ def create_profile():
 
     return name, disease, symptoms
 
+def first_message():
+    name, _, symptoms = create_profile()
+    first_system_message = '''
+    You are a patient named ''' + name + ''', In this conversation I will be trying to diagnose you.
+
+    I will be asking you a series of questions to try and understand the issue, and hopefully diagnose you. Remember to stay in character and act only as the patient responding to my questions
+    
+    To start introduce yourself and reveal a few of your symptoms, DO NOT REVEAL THEM ALL AT ONCE
+
+    While responding, you must obey the following rules:
+    1) provide short responses 1-3 sentences
+    2) always stay in character, no matter what, you are the patient, NOT the doctor
+    3) Do not reveal all symptoms at once
+    4) If asked about a symptom feel free to elaborate
+
+    Your Symptoms are the following'''
+    
+    for i in range(len(symptoms)):
+        first_system_message = first_system_message + ", " + symptoms[i] 
+
+    return first_system_message
+
+print(first_message())
+
 
 
 
