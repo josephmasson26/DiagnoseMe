@@ -20,7 +20,9 @@ const Dropdown = ({ options }) => {
                 setSearch(search + key);
             } else if (display && key === 'Backspace') {
                 setSearch(search.slice(0, -1));
-              }
+            } else if (display && key === ' ') {
+                setSearch(search + ' ');
+            }
         };
 
         window.addEventListener('keydown', handleKeyDown);
