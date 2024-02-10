@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from './components/Header';
+import ButtonGooey from './components/ButtonGooey';
 
 const App = () => {
     return (
         <div className="App">
             <Header />
+            <ButtonGooey />
         </div>
     
     );
