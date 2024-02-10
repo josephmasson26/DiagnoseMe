@@ -1,0 +1,8 @@
+# Dev environment
+pip
+autopep8
+
+# App
+google-generativeai # Client library for Gemini, etc.
+Pillow # PIL image-loading library
+Flask==3.0.0
