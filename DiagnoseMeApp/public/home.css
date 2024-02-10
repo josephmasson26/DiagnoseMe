@@ -5,4 +5,64 @@ body {
     -o-background-size: cover;
     background-size: cover;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    height: 100%;
 }
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Prevents scrollbars */
+  }
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .box {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  .main-box {
+    grid-row: span 2;
+    background: linear-gradient(to right, #6a3093, #a044ff); /* Different variant */
+  }
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .box {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  .main-box {
+    grid-row: span 2;
+    background: linear-gradient(to right, #6a3093, #a044ff); /* Different variant */
+  }
