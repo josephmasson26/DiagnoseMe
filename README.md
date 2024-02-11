@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/76028202/326c1ece-e121-48ee-a444-75ca1e176a96" alt="DiagnoseMeLogo2"/>
+  <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/76028202/834be3e1-42a5-4ed8-8f75-b0950bd07952" alt="DiagnoseMeLogo2"/>
 </p>
 
 # DiagnoseMe
