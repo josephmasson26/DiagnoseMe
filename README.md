@@ -21,7 +21,7 @@ DiagnoseMe is an interactive chatbot application designed to simulate patient in
 
 ### Backend
 
-1. Install the necessary Python packages with `pip install google-generativeai flask`.
+1. Install the necessary Python packages with `pip install openai flask`.
 2. Start the server with `python3 main.py`.
 
 ## Usage
