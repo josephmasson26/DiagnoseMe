@@ -1,4 +1,5 @@
-![DiagnoseMeLogo](https://github.com/NamkhangNLe/DiagnoseMe/assets/76028202/66fa3d82-c806-4d14-96eb-3c4bd68b9fe3)
+
+![DiagnoseMeLogo copy](https://github.com/NamkhangNLe/DiagnoseMe/assets/76028202/d0ceb184-65ee-4585-96de-26722015f2e4)
 
 # DiagnoseMe
 
