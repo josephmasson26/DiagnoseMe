@@ -49,7 +49,7 @@ const Dropdown = ({ options }) => {
     return (
         <div className="dropdown">
             <div className="dropdown-header" 
-                 onMouseEnter={() => { toggleDropdown(); setIsMouseInside(true); }} // Set isMouseInside to true
+                 onMouseUp={() => { toggleDropdown(); setIsMouseInside(true); }} // Set isMouseInside to true
                  onMouseLeave={() => setIsMouseInside(false)} // Set isMouseInside to false
             >
                 {search}
