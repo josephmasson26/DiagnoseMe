@@ -51,4 +51,4 @@ All JavaScript must adhere to [JavaScript Standard Style](https://standardjs.com
 
 ## Code of Conduct
 
-This project and everyone participating in it is governed by the [DiagnoseMe Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [diagnoseme@example.com](mailto:diagnoseme@example.com).
+This project and everyone participating in it is governed by the [DiagnoseMe Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please don't hesitate to report any unacceptable behavior.
