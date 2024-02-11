@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import ReactDOM from 'react-dom';
 import Header from './components/Header';
 import GithubButton from './components/GithubButton';
@@ -8,34 +8,31 @@ import ReactStars from 'react-stars';
 import styled from 'styled-components';
 import FadeIn from 'react-fade-in/lib/FadeIn';
 import ResetButton from './components/ResetButton';
+// import data from './disease_distances.json' assert { type: 'json' }
+
 
 // Change this to get a new rating
-const [rating, setRating] = useState(0);
-setRating(0)
-
-const getStars = (e) => {
-    if(e <= 0){
-        setRating(5)
-    } else if(e <= 2.5){
-        setRating(4)
-    } else if(e <= 3.2){
-        setRating(3)
-    } else if(e <= 4.0){
-        setRating(2)
-    } else if(e <= 4.373){
-        setRating(1)
-    } else {
-        setRating(0)
-    }
-}
-
-const results = ["I need a big strong dommy mommy"];
-
-
-
-
 
 const App = () => {
+
+    const [rating, setRating] = useState(0);
+    const [distance, setDistance] = useState("");
+    const [guess, setGuess] = useState("");
+    const [disease, setDisease] = useState("");
+
+    useEffect(() => {
+        fetch('http://127.0.0.1:5000/disease')
+        .then(response => response.json())
+        .then(data => {
+            setDistance(data.distance);
+            setRating(data.rating);
+            setGuess(data.guess);
+            setDisease(data.disease);
+        });
+    }, []);
+
+    // const results = ["I need a big strong dommy mommy"];
+
     return (
         <div className="App">
             <FadeIn delay={300} transitionDuration={2000}>
@@ -52,7 +49,9 @@ const App = () => {
                     <div className="box side-box">
                         <div class="box-content">
                         <FadeIn delay={1000} transitionDuration={2000}>
-                            <h1>results</h1>
+                            <h1>Guess:{guess}</h1>
+                            <h1>Disease:{disease}</h1>
+                            <h1>Distance:{distance}</h1>
                         </FadeIn>
                         </div>
                     </div>
