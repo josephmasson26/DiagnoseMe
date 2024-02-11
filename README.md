@@ -37,7 +37,7 @@ DiagnoseMe is an interactive chatbot application designed to simulate patient in
 1. Make an account on [OpenAI Platform](https://platform.openai.com/playground)
 2. Create a new secret API key
 3. Change .env_sample file to .env
-4. Replace YOUR KEY with your new secret key
+4. Replace YOUR KEY with your new secret key surrounded by ''
 
 ## Usage
 
