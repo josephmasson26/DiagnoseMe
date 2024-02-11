@@ -33,6 +33,17 @@ p {
   color: #592c7d;
 }
 
+p2 {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1em;
+  font-style: bold;
+  margin-left: 40px;
+  width: 100%;
+  text-align: center;
+  color: #20bba4;
+
+}
+
 .github-button {
   width: 30px;  /* adjust as needed */
   height: 30px;  /* adjust as needed */
@@ -158,6 +169,7 @@ body, html {
 
   .dropdown-header {
     background: linear-gradient(to right, #c44561, #790d24); /* Different variant */
+    border-radius: 10px;
     padding: 10px;
     height: 15px;
     margin-bottom: 2px;
@@ -170,6 +182,7 @@ body, html {
   
   .dropdown-body {
     background: linear-gradient(to right, #a8e6d1, #46d9a8); /* Different variant */
+    border-radius: 10px;
     height: 0;
     padding: 10px;
     overflow: hidden;
