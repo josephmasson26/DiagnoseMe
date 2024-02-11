@@ -1,4 +1,6 @@
-![DiagnoseMeLogo2](https://github.com/NamkhangNLe/DiagnoseMe/assets/76028202/326c1ece-e121-48ee-a444-75ca1e176a96)
+<p align="center">
+  <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/76028202/326c1ece-e121-48ee-a444-75ca1e176a96" alt="DiagnoseMeLogo2"/>
+</p>
 
 # DiagnoseMe
 
