@@ -51,6 +51,18 @@ After starting the application, interact with the chatbot by typing your queries
      
 </div>
 
+## Data
+
+<div align="center">
+    <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/76028202/8981e5e1-cac7-4849-a87b-17a8d350c655" width="400px"</img>
+    <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/76028202/58d1126c-13e5-44f5-8047-a5a109ed6c9c" width="400px"</img> 
+    <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/76028202/9ddcc00e-9dc7-40f2-a556-dfbb39fdaf29" width="400px"</img> 
+    <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/76028202/31b4bcdc-eadc-4d43-9950-fc0c53407508" width="400px"</img> 
+
+
+
+</div>
+
 
 ## Acknowledgements
 
