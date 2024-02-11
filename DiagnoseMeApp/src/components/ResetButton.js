@@ -7,11 +7,9 @@ const ResetButton = () => {
     };
 
     return (
-    <FadeIn delay={1500} transitionDuration={2000}>
         <button className="reset-button" onClick={handleClick}>
-            Reset
+            reset
         </button>
-    </FadeIn>
     );
 };
 

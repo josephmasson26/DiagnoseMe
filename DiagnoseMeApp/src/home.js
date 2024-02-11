@@ -27,37 +27,53 @@ const App = () => {
     }, []);
 
     return (
-        <FadeIn delay={300} transitionDuration={2000}>
-          <div className="grid">
-            <div className="box side-box">
-                <div class="box-content">
-                <div class='container'>
-            
-            <Header />
-            <Subtitle />
-            <GithubButton class="github-button" repoUrl="https://github.com/josephmasson26/diagnoseme" />
-            <ResetButton />
-        </div>
-                </div>    
-            </div>
-            <div className="box main-box">
-                <div class="box-content">
-                    <Chatbot className="chatbot" config={config} actionProvider={ActionProvider} messageParser={MessageParser} />
-                </div>    
-            </div>
-
-            <div className="box side-box">
-                <div class="box-content">
-                    <p>click and type in your diagnosis: </p>
-                    <Dropdown options={options} />
-                </div>
-            </div>
-
-          </div>
-
-          <SubmitButton />
+    <div className="App">
         
+        <div className="grid">
+            
+                <div className="box side-box">
+                <FadeIn delay={900} transitionDuration={2000}>
+                    <div class="box-content">
+                        <div class='container'>
+                            <Header />
+                            <Subtitle />
+                            <GithubButton class="github-button" repoUrl="https://github.com/josephmasson26/diagnoseme" />
+                            <ResetButton />
+                        </div>
+                    </div> 
+                </FadeIn>   
+                </div>
+            
+
+            
+                <div className="box main-box">
+                <FadeIn delay={600} transitionDuration={2000}>
+                    <div class="box-content">
+                        <Chatbot className="chatbot" config={config} actionProvider={ActionProvider} messageParser={MessageParser} />
+                    </div> 
+                </FadeIn>   
+                </div>
+            
+
+            
+                <div className="box side-box">
+                <FadeIn delay={300} transitionDuration={2000}>
+                    <div class="box-content">
+                        <p>click and type in your guess! </p>
+                        <Dropdown options={options} />
+                    </div>
+                </FadeIn>
+                </div>
+            
+
+        </div>
+        
+
+        <FadeIn delay={1200} transitionDuration={4000}>
+            <SubmitButton />
         </FadeIn>
+
+    </div>
         
       );
     }   

@@ -34,7 +34,7 @@ export const ButtonGooey = () => {
             <feColorMatrix
               in="blur"
               mode="matrix"
-              values="0 0 1 0 0  0 1 1 0 0  1 0 1 0 1  0 0 0 20 -10"
+              values="0 0 1 0 0  0 1 1 0 0  1 0 1 1 1  0 0 0 20 -10"
 
               result="gooey"
             />
@@ -55,7 +55,7 @@ export const ButtonGooey = () => {
         }
 
         .button {
-          background: linear-gradient(to right, #a199db, #6a3093);
+          background: linear-gradient(to right, #c28df9, #8f42ce);
           color: #eee;
           display: inline-flex;
           font-weight: bold;
@@ -72,7 +72,7 @@ export const ButtonGooey = () => {
           color: #fff;
           z-index: -10;
           display: flex;
-          background: linear-gradient(to right, #782ead, #330867);
+          background: linear-gradient(to right, #782ead, #7d3daa);
 
           align-items: center;
           justify-content: center;
@@ -81,7 +81,7 @@ export const ButtonGooey = () => {
           position: absolute;
           content: "";
           border-radius: 12px;
-          transition: transform 0.8s;
+          transition: transform 0.4s;
           transition-timing-function: bezier(0.2, 0.8, 0.2, 1.2);
           transform: translateX(80%) translateY(0%);
           cursor: pointer;
