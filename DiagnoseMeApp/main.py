@@ -26,7 +26,6 @@ chat_session_test = [
     }
 ]
 
-# system_prompt = 
 
 app = Flask(__name__)
 
