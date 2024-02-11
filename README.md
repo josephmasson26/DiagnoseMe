@@ -1,14 +1,18 @@
 ![logo](https://github.com/josephmasson26/DiagnoseMe/assets/122403630/78efe57d-1eae-4af5-ab3c-6671acb88eec)
 
+# DiagnoseMe
+
+![logo](https://github.com/josephmasson26/DiagnoseMe/assets/122403630/78efe57d-1eae-4af5-ab3c-6671acb88eec)
+
+DiagnoseMe is an interactive chatbot application designed to simulate patient interactions. It leverages the power of AI to generate responses based on a variety of medical conditions, providing a user-friendly interface for medical students to practice their diagnostic skills.
+
 ## Features
 
-- Interactive chatbot simulating patient interactions
-- AI-powered responses based on a variety of medical conditions
-- User-friendly interface
+- **Interactive Chatbot:** Simulates patient interactions, providing a realistic environment for medical students to practice their diagnostic skills.
+- **AI-Powered Responses:** Utilizes OpenAI's ChatGPT to generate responses based on a variety of medical conditions.
+- **User-Friendly Interface:** Provides a smooth and intuitive user experience, making it easy for users to interact with the chatbot.
 
 ## Installation
-
-To set up DiagnoseMe on your local machine, follow these steps:
 
 ### Frontend
 
@@ -22,32 +26,27 @@ To set up DiagnoseMe on your local machine, follow these steps:
 1. Install the necessary Python packages with `pip install google-generativeai flask`.
 2. Start the server with `python3 main.py`.
 
-## Built With
-
-DiagnoseMe utilizes a range of modern technologies to provide an interactive and educational experience:
-
-- **Flask:** A lightweight web server used to host the Gemini API. Flask's simplicity and flexibility make it a great choice for serving our AI-generated responses.
-
-- **Electron:** A framework for creating native applications with web technologies like JavaScript, HTML, and CSS. Electron is used to build the user interface of DiagnoseMe, providing a smooth and intuitive user experience.
-
-- **Gemini:** An AI model developed by OpenAI. Gemini is used to generate the responses for our simulated patient, providing realistic and varied interactions for users.
-
-- **JavaScript:** The primary programming language used in DiagnoseMe. JavaScript powers the interactive elements of the application, including the chatbot interface.
-
-- **HTML/CSS:** Used to structure and style the user interface of DiagnoseMe.
-
-- **npm:** A package manager for JavaScript, used to manage the project's dependencies.
-
-These technologies come together to create a powerful tool for medical students to practice their diagnostic skills.
-
 ## Usage
 
-After starting the application, you can interact with the chatbot by typing your responses into the chat interface. The chatbot will respond as a simulated patient, allowing you to practice diagnosing and treating a variety of conditions.
+After starting the application, interact with the chatbot by typing your queries into the chat interface. The chatbot will respond with AI-generated responses based on the input.
+
+## Built With
+
+- **Flask:** A lightweight web server used to host the OpenAI API. Flask's simplicity and flexibility make it a great choice for serving our AI-generated responses.
+- **Electron:** A framework for creating native applications with web technologies like JavaScript, HTML, and CSS. Electron is used to build the user interface of DiagnoseMe, providing a smooth and intuitive user experience.
+- **OpenAI's ChatGPT:** An AI model developed by OpenAI. ChatGPT is used to generate the responses for our simulated patient, providing realistic and varied interactions for users.
+- **JavaScript:** The primary programming language used in DiagnoseMe. JavaScript powers the interactive elements of the application, including the chatbot interface.
+- **HTML/CSS:** Used to structure and style the user interface of DiagnoseMe.
+- **npm:** A package manager for JavaScript, used to manage the project's dependencies.
+
+## Note
+
+While developing DiagnoseMe, we explored various AI models for generating responses. We initially considered using Google's Gemini but ultimately decided to use OpenAI's ChatGPT due to its superior performance in generating realistic and varied interactions.
 
 ## Contributing
 
-We welcome contributions to DiagnoseMe! If you have a feature request, bug report, or want to contribute to the code, please [open an issue](https://github.com/josephmasson26/DiagnoseMe/issues) or submit a pull request.
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for more details.
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
