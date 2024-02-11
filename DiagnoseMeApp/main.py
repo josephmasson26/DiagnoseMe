@@ -50,20 +50,13 @@ def reset():
 
     print("Disease: ", disease[0])
 
-    # chat_session = [
-    #     {
-    #         "role" : "system",
-    #         "content" : message[0]
-    #     }
-    # ]
+    chat_session = [
+        {
+            "role" : "system",
+            "content" : message[0]
+        }
+    ]
 
-    # chat_session.clear()
-    # chat_session.append(
-    #     {
-    #         "role" : "system",
-    #         "content" : message_state[0]
-    #     }
-    # )
     return json.dumps({"text" : "Chat session reset"})
 
 @app.route("/disease", methods=["GET"])
@@ -133,7 +126,7 @@ def generate_api():
                 model="gpt-3.5-turbo",
                 temperature = 0.2,
                 messages=chat_session,
-                max_tokens=1000
+                max_tokens=2000
             )
 
             print(completion)
