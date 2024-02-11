@@ -23,6 +23,7 @@ const App = () => {
     const options = ["Migraine", "Vomiting", "Bruise", "Stroke", "Sweating", "Option 6", "Option 7", "Option 8", "Option 9", "Option 10"];
 
     return (
+    <div className="App">
         <FadeIn delay={300} transitionDuration={2000}>
           <div className="grid">
             <div className="box side-box">
@@ -50,10 +51,13 @@ const App = () => {
             </div>
 
           </div>
-
-          <SubmitButton />
-        
         </FadeIn>
+
+        <FadeIn delay={1000} transitionDuration={4000}>
+            <SubmitButton />
+        </FadeIn>
+
+    </div>
         
       );
     }   
