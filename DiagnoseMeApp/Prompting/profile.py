@@ -3,8 +3,8 @@ import pandas as pd
 
 def extract_data():
     # Read the diseases CSV file
-    diseases_data = pd.read_csv('disease_vector.csv')
-    names_data = pd.read_csv('SSA_Names_DB.csv')
+    diseases_data = pd.read_csv('Prompting/disease_vector.csv')
+    names_data = pd.read_csv('Prompting/SSA_Names_DB.csv')
 
 
     # Extract one row from the diseases data
@@ -71,12 +71,6 @@ def first_message():
     return disease, first_system_message
 
 print(first_message())
-
-
-
-
-
-
 
 
 
