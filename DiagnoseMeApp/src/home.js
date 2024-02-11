@@ -29,13 +29,12 @@ const App = () => {
             <div className="box side-box">
                 <div class="box-content">
                 <div class='container'>
-            
             <Header />
             <Subtitle />
             <GithubButton class="github-button" repoUrl="https://github.com/josephmasson26/diagnoseme" />
             <ResetButton />
-        </div>
-                </div>    
+            </div>
+        </div>    
             </div>
             <div className="box main-box">
                 <div class="box-content">
@@ -45,7 +44,7 @@ const App = () => {
 
             <div className="box side-box">
                 <div class="box-content">
-                    <p>click and type in your diagnosis: </p>
+                    <p>click and type in your guess! </p>
                     <Dropdown options={options} />
                 </div>
             </div>
