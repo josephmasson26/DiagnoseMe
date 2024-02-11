@@ -44,10 +44,10 @@ After starting the application, interact with the chatbot by typing your queries
 ## Gallery
 
 <div align="center">
-    <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/122403630/b279e0a4-65f9-4b4f-8147-3f339371bbf7" width="500px"</img>
-    <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/122403630/896a0e55-27e4-41aa-bccc-b9dd63682450" width="500px"</img> 
-    <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/122403630/4ff3fc63-766c-4cf3-9308-c477818f623c" width="500px"</img> 
-    <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/122403630/02750da4-3464-4e16-bc60-8045df259903" width="500px"</img> 
+    <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/122403630/b279e0a4-65f9-4b4f-8147-3f339371bbf7" width="400px"</img>
+    <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/122403630/896a0e55-27e4-41aa-bccc-b9dd63682450" width="400px"</img> 
+    <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/122403630/4ff3fc63-766c-4cf3-9308-c477818f623c" width="400px"</img> 
+    <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/122403630/02750da4-3464-4e16-bc60-8045df259903" width="400px"</img> 
      
 </div>
 
