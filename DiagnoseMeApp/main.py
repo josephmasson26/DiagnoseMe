@@ -1,6 +1,7 @@
 import json
 import os
 import openai
+from Prompting import profile
 
 import google.generativeai as genai
 from flask import Flask, jsonify, request, send_file, send_from_directory
@@ -9,7 +10,16 @@ Version 3.0.0 don't forget to "pip install -r requirements.txt
 python -c "import flask; print(flask.__version__)" to check flask version on local computer
 '''
 
+
+
 chat_session = [
+    {
+        "role" : "system",
+        "content" : profile.first_message()
+    }
+]
+
+chat_session_test = [
     {
         "role" : "system",
         "content" : "Only give out 1 word answers. Do not reuse words"
@@ -31,11 +41,11 @@ def generate_api():
         try:
 
             req_body = request.get_json()
-            print(f"Request body: {req_body}")
-            print("yes? ", req_body['contents'])
-
             user_input = req_body['contents'][0]['parts'][0]['text']
             print(f"User input: {user_input}")
+
+            #### uncomment for testing #####
+            # return json.dumps({"text" : chat_session_test[0]})
 
             # open ai set up
 
@@ -58,7 +68,7 @@ def generate_api():
                 max_tokens=50
             )
 
-            print(completion.choices[0].message.content)
+            print("output: ", completion.choices[0].message.content)
 
             output_text = completion.choices[0].message.content
 
