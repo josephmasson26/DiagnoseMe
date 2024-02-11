@@ -6,7 +6,7 @@ import { ArrowRightIcon } from "@radix-ui/react-icons";
 
 export const ButtonGooey = () => {
   return (
-    <FadeIn delay = {600} transitionDuration={2000}>
+    <FadeIn delay = {700} transitionDuration={2000}>
       <div className="wrapper">
         <button className="button">
           get started
