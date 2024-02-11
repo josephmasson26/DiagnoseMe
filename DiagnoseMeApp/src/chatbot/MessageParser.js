@@ -12,7 +12,7 @@ const MessageParser = ({ children, actions }) => {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        model: 'gemini-pro',
+        model: 'gpt-3.5-turbo',
         contents: [
           {
             role: 'user',
@@ -22,8 +22,14 @@ const MessageParser = ({ children, actions }) => {
       })
     })
     .then(response => {
+      console.log('Response:', response); // Console log the response
+
       const reader = response.body.getReader();
+      console.log('Reader:', reader);
+
       reader.read().then(function process({ done, value }) {
+        console.log('Done:', done);
+        console.log('Value:', value);
         if (done) return;
         const chunk = new TextDecoder().decode(value);
         const jsonString = chunk.replace('data: ', '');
@@ -31,6 +37,7 @@ const MessageParser = ({ children, actions }) => {
         actions.setApiResponse(parsedData.text);
         return reader.read().then(process);
       });
+      
     })
     .catch(error => console.error('Error:', error)); // Handling any errors that occur during the request
   };
