@@ -32,6 +32,13 @@ DiagnoseMe is an interactive chatbot application designed to simulate patient in
 1. Install the necessary Python packages with `pip install openai flask`.
 2. Start the server with `python3 main.py`.
 
+### Large Language Model
+
+1. Make an account on [OpenAI Platform](https://platform.openai.com/playground)
+2. Create a new secret API key
+3. Change .env_sample file to .env
+4. Replace YOUR KEY with your new secret key
+
 ## Usage
 
 After starting the application, interact with the chatbot by typing your queries into the chat interface. The chatbot will respond with AI-generated responses based on the input.
