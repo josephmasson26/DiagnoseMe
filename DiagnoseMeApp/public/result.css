@@ -1,10 +1,19 @@
+h1 {
+  background: linear-gradient(to right, #ca35db 0%, #330867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 10px;
+}
+
 .subtitle {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   
-    font-size: 0.75em;
-    margin-top: -20px;
+    font-size: 1em;
+    margin-top: 10px;
+    padding: 5px;
     width: 100%;
-  
     background: linear-gradient(to right, #9f60e1, #5f3a9b);
     border-radius: 15px;
     -webkit-background-clip: text;
@@ -12,21 +21,32 @@
     text-align: center;
     color: white;
   }
-  
+
   .github-button {
     width: 30px;  /* adjust as needed */
     height: 30px;  /* adjust as needed */
-    padding-bottom: 5px;
+    padding-bottom: 20px;
   }
+
+  .credits {
+    font-size: 0.7px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin-top: 20px;
+    padding: 5px;
+    width: 100%;
+    background: linear-gradient(to right, #e16089, #b31144);
+    border-radius: 15px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    color: white;
+    }
+
+
   
-  h1 {
-      background: linear-gradient(to right, #ca35db 0%, #330867 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-align: center;
-      font-size: 1.5em;
-      margin-top: 30px;
-  }
+  
+  
+  
   
   .container {
     display: flex;
@@ -94,10 +114,10 @@
   }
 
   .box:nth-child(2):hover {
-    background: #b94ff7;
-    color: #66bcde;
-    box-shadow: 0 0 30px #e13c62;
-    
+    background: linear-gradient(to right, #d4c0f5, #cfd1f7);
+    color: #fde0fe;
+    box-shadow: 0 0 30px #fde0fe;
+    z-index: 1;
     opacity: 1;
     transform: scale(1.1); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
 
@@ -116,9 +136,9 @@
   }
 
   .box:nth-child(3):hover {
-    background: #8b6dc3;
+    background: linear-gradient(to right, #c5d8f8, #e5e1fa);
     color: #66dade;
-    box-shadow: 0 0 30px #e13c62;
+    box-shadow: 0 0 30px #cf71ff;
     color: #66bcde;
     opacity: 1;
     transform: scale(1.1); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
@@ -137,12 +157,12 @@
   }
 
   .main-box:hover {
-    background: #460b8f; /* Different variant */
+    background: linear-gradient(to right, #d8b8f9, #cdd0fb);
     color: #66bcde;
-    box-shadow: 0 0 30px #e13c62;
-    text-shadow: 0 0 30px #e13c62;
+    box-shadow: 0 0 30px #b0f6fe;
+    text-shadow: 0 0 30px #d96f88;
     opacity: 1;
-    transform: scale(1.05); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
+    transform: scale(1.1); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
     z-index: 1;
   }
 
@@ -218,7 +238,7 @@
   display: block;
   margin: 0 auto;
   margin-top: 10px;
-  font-size: 0.8em;
+  font-size: 1.5em;
   background: linear-gradient(to right, #d2aafc, #7e0955);
   color: #fff;
   border: none;
@@ -230,6 +250,6 @@
 
 .reset-button:hover {
   background: #37034d;
-  transform: scale(1.3);
+  transform: scale(1.5);
   color: #d2aafc;
 }

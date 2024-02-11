@@ -44,14 +44,16 @@ const Dropdown = ({ options }) => {
             setDisplay(!display);
             setOpenedOnce(true);
         }
+        document.getElementById('diagnosis').style.display = 'none';
     };
 
     return (
         <div className="dropdown">
             <div className="dropdown-header" 
-                 onMouseEnter={() => { toggleDropdown(); setIsMouseInside(true); }} // Set isMouseInside to true
+                 onMouseUp={() => { toggleDropdown(); setIsMouseInside(true); }} // Set isMouseInside to true
                  onMouseLeave={() => setIsMouseInside(false)} // Set isMouseInside to false
             >
+                <p2 id="diagnosis">diagnosis</p2>
                 {search}
             </div>
             {display &&(

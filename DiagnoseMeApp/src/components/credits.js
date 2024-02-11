@@ -1,15 +1,15 @@
 import React from 'react';
 import FadeIn from 'react-fade-in/lib/FadeIn';
 
-const Subtitle = () => {
+const Credits = () => {
     
     return (
         
         <div className="subtitle">
-            developed for Hacklytics 2024
+            max ko, namkhang le, raghav maddula, and joseph masson
         </div>
         
     );
 };
 
-export default Subtitle;
+export default Credits;

@@ -1,10 +1,20 @@
+h1 {
+	background: linear-gradient(to right, rgb(80, 52, 221) 0%, rgb(221, 52, 218));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 1.9em;
+    margin-top: 10px;
+    opacity: 1;
+    text-shadow: 0px 0px 1px rgba(25,139,154, 0.5); /* Add this line */
+}
+
 .subtitle {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-
-  font-size: 0.5em;
-  margin-top: -20px;
+  font-size: 1em;
+  padding: 5px;
+  margin-bottom: 20px;
   width: 100%;
-
   background: linear-gradient(to right, #685896, #361e7c);
   border-radius: 15px;
   -webkit-background-clip: text;
@@ -15,28 +25,32 @@
 
 p {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 0.75em;
+  font-size: 0.85em;
+  font-style: italic;
   margin-top: 10px;
   width: 100%;
   text-align: center;
-  color: white;
+  color: #592c7d;
+}
+
+p2 {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1em;
+  font-style: bold;
+  margin-left: 40px;
+  width: 100%;
+  text-align: center;
+  color: #20bba4;
+
 }
 
 .github-button {
   width: 30px;  /* adjust as needed */
   height: 30px;  /* adjust as needed */
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
-h1 {
-	background: linear-gradient(to right, #91dfe9 0%, #188b9a 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-    text-align: center;
-    font-size: 1.8em;
-    margin-top: -10px;
-    opacity: 1;
-}
+
 
 .container {
   display: flex;
@@ -103,22 +117,26 @@ body, html {
   }
 
   .box:nth-child(1) {
-    background: linear-gradient(to right, #ca35db, #d99dfd);
+    grid-row: 2;
+    grid-column: 1;
+    background: linear-gradient(to right, #8cb5f5, #5b90e7);
     opacity: 0.5;
   }
 
   .box:nth-child(1):hover {
-    background: #b94ff7;
-    color: #66bcde;
-    box-shadow: 0 0 30px #e13c62;
-    
+    background: linear-gradient(to right, #8abbf5, #4b7dba);
+    color: #66dade;
+    box-shadow: 0 0 30px #fedfff;
     opacity: 1;
     transform: scale(1.1); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
 
   }
   
   .box:nth-child(3) {
-    background: linear-gradient(to right, #8cb5f5, #e2c4f6);
+    grid-row: 1;
+    grid-column: 1;
+    background: linear-gradient(to right, #ca35db, #d99dfd);
+    
     opacity: 0.5;
 
     display: flex;
@@ -128,9 +146,9 @@ body, html {
   }
 
   .box:nth-child(3):hover {
-    background: #8b6dc3;
-    color: #66dade;
-    box-shadow: 0 0 30px #e13c62;
+    background: linear-gradient(to right, #a973d5, #923fd6);
+    color: #66bcde;
+    box-shadow: 0 0 30px #83f0ff;
     color: #66bcde;
     opacity: 1;
     transform: scale(1.1); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
@@ -151,8 +169,10 @@ body, html {
 
   .dropdown-header {
     background: linear-gradient(to right, #c44561, #790d24); /* Different variant */
+    border-radius: 10px;
     padding: 10px;
-
+    height: 15px;
+    margin-bottom: 2px;
     cursor: pointer;
     overflow-y: auto; /* Enable vertical scrolling */
     overflow-x: hidden; /* Disable horizontal scrolling */
@@ -162,12 +182,13 @@ body, html {
   
   .dropdown-body {
     background: linear-gradient(to right, #a8e6d1, #46d9a8); /* Different variant */
+    border-radius: 10px;
     height: 0;
     padding: 10px;
     overflow: hidden;
     max-width: 200px;
     max-height: 150px;
-    transition: height 2s ease-in-out;
+    transition: height 4s ease-in-out;
     overflow-y: auto;
   }
 
@@ -200,12 +221,12 @@ body, html {
   }
 
   .main-box:hover {
-    background: #460b8f; /* Different variant */
+    background: linear-gradient(to right, #9792c5, #def0fa);
     color: #66bcde;
-    box-shadow: 0 0 30px #e13c62;
+    box-shadow: 0 0 30px #b2f8ff;
     text-shadow: 0 0 30px #e13c62;
     opacity: 1;
-    transform: scale(1.05); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
+    transform: scale(1.1); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
     z-index: 1;
   }
 
@@ -237,26 +258,6 @@ body, html {
     opacity: 1;
     overflow: auto
   }
-
-/* .submit-diagnosis-button {
-  display: block;
-  margin: 0 auto;
-  padding: 20px 40px;
-  font-size: 1.5em;
-  background: linear-gradient(to right, #d2aafc, #7e0955);
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-  transition: transform 2s ease;
-}
-
-.submit-diagnosis-button:hover {
-  background: #37034d;
-  transform: scale(1.1);
-}
-  */
 
 .reset-button {
   display: block;
