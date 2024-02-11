@@ -54,10 +54,9 @@ const App = () => {
                         <FadeIn delay={600} transitionDuration={2000}>
                         <div class="box-content">
                         <FadeIn delay={1000} transitionDuration={2000}>
-                            <h1>Guess:{guess}</h1>
-                            <h1>Disease:{disease}</h1>
-                            <h1>Distance:{distance}</h1>
-                        </FadeIn>
+                            <h2>Guess: {guess}</h2>
+                            <h2>Disease: {disease}</h2>
+                            <h2>Distance: {typeof distance === 'number' ? distance.toFixed(2) : distance}</h2>                        </FadeIn>
                         </div>
                         </FadeIn>
                     </div>

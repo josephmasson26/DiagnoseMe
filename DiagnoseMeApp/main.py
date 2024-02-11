@@ -3,7 +3,6 @@ import os
 import openai
 from Prompting import profile
 
-import google.generativeai as genai
 from flask import Flask, jsonify, request, send_file, send_from_directory
 '''
 Version 3.0.0 don't forget to "pip install -r requirements.txt
