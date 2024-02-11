@@ -8,7 +8,7 @@ const ResetButton = () => {
 
     return (
         <button className="reset-button" onClick={handleClick}>
-            Reset
+            reset
         </button>
     );
 };
