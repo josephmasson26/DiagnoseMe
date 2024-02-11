@@ -168,7 +168,7 @@ body, html {
   }
 
   .dropdown-header {
-    background: linear-gradient(to right, #c44561, #790d24); /* Different variant */
+    background: linear-gradient(to right, #7b488d, #510f6a); /* Different variant */
     border-radius: 10px;
     padding: 10px;
     height: 15px;
@@ -181,7 +181,7 @@ body, html {
   }
   
   .dropdown-body {
-    background: linear-gradient(to right, #a8e6d1, #46d9a8); /* Different variant */
+    background: linear-gradient(to right, #cd6fcd, #a421a4); /* Different variant */
     border-radius: 10px;
     height: 0;
     padding: 10px;
