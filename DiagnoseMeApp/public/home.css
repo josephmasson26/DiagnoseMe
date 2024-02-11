@@ -1,10 +1,19 @@
+h1 {
+	background: linear-gradient(to right, #91dfe9 0%, #188b9a 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 1.9em;
+    margin-top: 10px;
+    opacity: 1;
+}
+
 .subtitle {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-
-  font-size: 0.5em;
-  margin-top: -20px;
+  font-size: 1em;
+  padding: 5px;
+  margin-bottom: 10px;
   width: 100%;
-
   background: linear-gradient(to right, #685896, #361e7c);
   border-radius: 15px;
   -webkit-background-clip: text;
@@ -28,15 +37,7 @@ p {
   padding-bottom: 5px;
 }
 
-h1 {
-	background: linear-gradient(to right, #91dfe9 0%, #188b9a 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-    text-align: center;
-    font-size: 1.8em;
-    margin-top: -10px;
-    opacity: 1;
-}
+
 
 .container {
   display: flex;
@@ -103,6 +104,8 @@ body, html {
   }
 
   .box:nth-child(1) {
+    grid-row: 2;
+    grid-column: 1;
     background: linear-gradient(to right, #ca35db, #d99dfd);
     opacity: 0.5;
   }
@@ -118,6 +121,8 @@ body, html {
   }
   
   .box:nth-child(3) {
+    grid-row: 1;
+    grid-column: 1;
     background: linear-gradient(to right, #8cb5f5, #e2c4f6);
     opacity: 0.5;
 
