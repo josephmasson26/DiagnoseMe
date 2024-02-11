@@ -43,8 +43,8 @@ After starting the application, interact with the chatbot by typing your queries
 
 ## DataFrame
 <div align="center">
-    <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/76028202/153b1b14-d31a-4a67-b444-8083068828c9" width="600px"</img>
-    <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/76028202/c50910ea-f482-47ae-b524-4cfafb2483c3" width="500px"</img> 
+    <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/76028202/153b1b14-d31a-4a67-b444-8083068828c9" width="800px"</img>
+    <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/76028202/c50910ea-f482-47ae-b524-4cfafb2483c3" width="750px"</img> 
 </div>
 
 ## Data
