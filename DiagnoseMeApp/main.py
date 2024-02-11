@@ -19,12 +19,12 @@ guess = [""]
 disease_state = [disease]
 message_state = [message]
 
-chat_session = [
+chat_session = [[
     {
         "role" : "system",
         "content" : message[0]
     }
-]
+]]
 
 chat_session_test = [
     {
@@ -49,13 +49,15 @@ def reset():
     message[0] = m
 
     print("Disease: ", disease[0])
+    print("Message: ", message[0])
 
-    chat_session = [
-        {
+    print("Disease: ", disease[0])
+
+
+    chat_session[0] = [{
             "role" : "system",
             "content" : message[0]
-        }
-    ]
+    }]
 
     return json.dumps({"text" : "Chat session reset"})
 
@@ -113,19 +115,19 @@ def generate_api():
             client = openai.OpenAI(api_key=os.environ['OPENAI_API_KEY'])
             print("client set up success")
 
-            chat_session.append(
+            chat_session[0].append(
                 {
                     'role' : 'user',
                     'content' : user_input
                 }
             )
 
-            print("Current Chat Session: " , chat_session)
+            print("Current Chat Session: " , chat_session[0])
 
             completion = client.chat.completions.create(
                 model="gpt-3.5-turbo",
                 temperature = 0.2,
-                messages=chat_session,
+                messages=chat_session[0],
                 max_tokens=2000
             )
 
@@ -135,7 +137,7 @@ def generate_api():
 
             output_text = completion.choices[0].message.content
 
-            chat_session.append(
+            chat_session[0].append(
                 {
                     'role' : 'assistant',
                     'content' : output_text
