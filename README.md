@@ -1,8 +1,10 @@
+<h1 align="center">
+  <strong>DiagnoseMe</strong>
+</h1>
 <p align="center">
   <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/76028202/ed35f891-07ad-4c78-97f8-03cc9fa586b9" alt="DiagnoseMeLogo2"/>
 </p>
 
-# DiagnoseMe
 
 DiagnoseMe is an interactive chatbot application designed to simulate patient interactions. It leverages the power of AI to generate responses based on a variety of medical conditions, providing a user-friendly interface for medical students to practice their diagnostic skills.
 
