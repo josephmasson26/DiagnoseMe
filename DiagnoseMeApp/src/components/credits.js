@@ -6,7 +6,7 @@ const Credits = () => {
     return (
         
         <div className="subtitle">
-            max ko, namkhang le, raghav maddula, and joseph masson.
+            max ko, namkhang le, raghav maddula, and joseph masson
         </div>
         
     );

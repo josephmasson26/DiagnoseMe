@@ -29,20 +29,19 @@ h1 {
   }
 
   .credits {
-    .subtitle {
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      font-size: 0.4em;
-      margin-top: 20px;
-      padding: 5px;
-      width: 100%;
-      background: linear-gradient(to right, #e16089, #b31144);
-      border-radius: 15px;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-align: center;
-      color: white;
+    font-size: 0.7px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin-top: 20px;
+    padding: 5px;
+    width: 100%;
+    background: linear-gradient(to right, #e16089, #b31144);
+    border-radius: 15px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    color: white;
     }
-  }
+
 
   
   
@@ -120,7 +119,7 @@ h1 {
     box-shadow: 0 0 30px #fde0fe;
     z-index: 1;
     opacity: 1;
-    transform: scale(1.3); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
+    transform: scale(1.1); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
 
   }
   
@@ -142,7 +141,7 @@ h1 {
     box-shadow: 0 0 30px #cf71ff;
     color: #66bcde;
     opacity: 1;
-    transform: scale(1.3); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
+    transform: scale(1.1); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
     
   }
 
@@ -163,7 +162,7 @@ h1 {
     box-shadow: 0 0 30px #b0f6fe;
     text-shadow: 0 0 30px #d96f88;
     opacity: 1;
-    transform: scale(1.3); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
+    transform: scale(1.1); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
     z-index: 1;
   }
 
