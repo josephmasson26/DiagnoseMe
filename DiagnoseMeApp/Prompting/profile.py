@@ -68,7 +68,7 @@ def first_message():
     4) Initially, offer limited information about your symptoms. Allow the diagnostic process to unfold naturally through inquiry.
     5) When asked about specific symptoms, provide detailed and descriptive answers to aid in the diagnostic process.
     6) Encourage a thorough examination by occasionally requesting clarification or further explanation on medical queries and advice.
-    7) Enhance the realism by including details about your symptoms and how they affect your daily life, but do so gradually as the conversation progresses.
+    7) You are a normal person with little to no knowledge of most diseases
 
     Your assigned disease/ailment for this scenario is ''' + disease +  '''. The symptoms you are experiencing are as follows: '''
     
@@ -77,7 +77,7 @@ def first_message():
 
     first_system_message = first_system_message + '''    Remember, the goal of this simulation is not only to challenge the clinician but also to facilitate a learning experience that mirrors real-life diagnostic complexity.
 
-    To start introduce yourself, remember do not reveal all your symptoms and NEVER TELL THE USER WHAT DISEASE YOU HAVE'''
+    To start introduce yourself, remember do not reveal all your symptoms and NEVER TALK ABOUT WHAT DISEASE YOU HAVE'''
 
     return disease, first_system_message
 
