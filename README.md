@@ -41,6 +41,19 @@ After starting the application, interact with the chatbot by typing your queries
 
 While developing DiagnoseMe, we explored various AI models for generating responses. We initially considered using Google's Gemini but ultimately decided to use OpenAI's ChatGPT due to its superior performance in generating realistic and varied interactions.
 
+## Acknowledgements
+
+This project makes use of numberous React components. We thank the developers of these components and acknowledge their impact on this project.
+
+[React Fade-In](https://www.npmjs.com/package/react-fade-in)
+
+[Gooey Button](https://www.julienthibeaut.xyz/lab/button-gooey)
+
+[React-Chatbot-Kit](https://www.npmjs.com/package/react-chatbot-kit)
+
+[React-Stars](https://www.npmjs.com/package/react-stars)
+
+
 ## Contributing
 
 We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for more details.
