@@ -1,6 +1,5 @@
 h1 {
-  background: linear-gradient(to right, #ca35db 0%, #330867 100%);
-  -webkit-background-clip: text;
+  background: linear-gradient(to right, #5e1866 0%, #1c023c 100%);  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
   font-size: 2.5em;
@@ -252,4 +251,14 @@ h1 {
   background: #37034d;
   transform: scale(1.5);
   color: #d2aafc;
+}
+
+.h2 {
+  background: linear-gradient(to right, #ca35db 0%, #330867 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-align: center;
+font-size: 1.2em;
+margin-top: 10px;
+
 }

@@ -41,6 +41,7 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+__pycache__/
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
@@ -136,3 +137,4 @@ dist
 # Flask backend environment variables
 backend/.env
 .vscode/settings.json
+

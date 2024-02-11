@@ -3,7 +3,7 @@ import { ICustomStyles } from 'react-chatbot-kit';
 
 const config = {
   botName: "DiagnoseMeBot",
-  initialMessages: [createChatBotMessage(`hello world`)],
+  initialMessages: [createChatBotMessage(`Hello Doc!`)],
   
   customStyles: ICustomStyles ={
     botMessageBox: {
