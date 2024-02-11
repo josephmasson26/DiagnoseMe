@@ -55,7 +55,7 @@ export const ButtonGooey = () => {
         }
 
         .button {
-          background: linear-gradient(to right, #a199db, #6a3093);
+          background: linear-gradient(to right, #c28df9, #8f42ce);
           color: #eee;
           display: inline-flex;
           font-weight: bold;
@@ -72,7 +72,7 @@ export const ButtonGooey = () => {
           color: #fff;
           z-index: -10;
           display: flex;
-          background: linear-gradient(to right, #782ead, #330867);
+          background: linear-gradient(to right, #782ead, #7d3daa);
 
           align-items: center;
           justify-content: center;

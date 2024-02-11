@@ -13,7 +13,7 @@ h1 {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 1em;
   padding: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   width: 100%;
   background: linear-gradient(to right, #685896, #361e7c);
   border-radius: 15px;
@@ -112,7 +112,7 @@ body, html {
   }
 
   .box:nth-child(1):hover {
-    background: #8b6dc3;
+    background: #a973d5;
     color: #66dade;
     box-shadow: 0 0 30px #e13c62;
     opacity: 1;
@@ -134,7 +134,7 @@ body, html {
   }
 
   .box:nth-child(3):hover {
-    background: #b94ff7;
+    background: #a973d5;
     color: #66bcde;
     box-shadow: 0 0 30px #e13c62;
     color: #66bcde;
@@ -207,7 +207,7 @@ body, html {
   }
 
   .main-box:hover {
-    background: #460b8f; /* Different variant */
+    background: #a973d5; /* Different variant */
     color: #66bcde;
     box-shadow: 0 0 30px #e13c62;
     text-shadow: 0 0 30px #e13c62;
