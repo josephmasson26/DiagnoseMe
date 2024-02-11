@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
 import Header from './components/Header';
 import GithubButton from './components/GithubButton';
@@ -10,9 +10,29 @@ import FadeIn from 'react-fade-in/lib/FadeIn';
 import ResetButton from './components/ResetButton';
 
 // Change this to get a new rating
-const rating = 3;
+const [rating, setRating] = useState(0);
+setRating(0)
 
-const results = ["Dummy Results"];
+const getStars = (e) => {
+    if(e <= 0){
+        setRating(5)
+    } else if(e <= 2.5){
+        setRating(4)
+    } else if(e <= 3.2){
+        setRating(3)
+    } else if(e <= 4.0){
+        setRating(2)
+    } else if(e <= 4.373){
+        setRating(1)
+    } else {
+        setRating(0)
+    }
+}
+
+const results = ["I need a big strong dommy mommy"];
+
+
+
 
 
 const App = () => {
