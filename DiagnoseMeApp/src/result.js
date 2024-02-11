@@ -50,7 +50,11 @@ const App = () => {
                 
                 </div>
 
-                <ResetButton />
+
+                <FadeIn delay={1000} transitionDuration={4000}>
+                    <ResetButton />
+                </FadeIn>
+
 
             </FadeIn>
                 
