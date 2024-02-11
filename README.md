@@ -41,14 +41,14 @@ After starting the application, interact with the chatbot by typing your queries
 - **HTML/CSS:** Used to structure and style the user interface of DiagnoseMe.
 - **npm:** A package manager for JavaScript, used to manage the project's dependencies.
 
-## Gallery
+## DataFrame
 
 <div align="center">
-    <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/122403630/b279e0a4-65f9-4b4f-8147-3f339371bbf7" width="400px"</img>
-    <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/122403630/896a0e55-27e4-41aa-bccc-b9dd63682450" width="400px"</img> 
-    <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/122403630/4ff3fc63-766c-4cf3-9308-c477818f623c" width="400px"</img> 
-    <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/122403630/02750da4-3464-4e16-bc60-8045df259903" width="400px"</img> 
-     
+    <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/76028202/153b1b14-d31a-4a67-b444-8083068828c9" width="400px"</img>
+    <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/76028202/c50910ea-f482-47ae-b524-4cfafb2483c3" width="400px"</img> 
+
+
+
 </div>
 
 ## Data
@@ -62,6 +62,18 @@ After starting the application, interact with the chatbot by typing your queries
 
 
 </div>
+
+## Gallery
+
+<div align="center">
+    <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/122403630/b279e0a4-65f9-4b4f-8147-3f339371bbf7" width="400px"</img>
+    <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/122403630/896a0e55-27e4-41aa-bccc-b9dd63682450" width="400px"</img> 
+    <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/122403630/4ff3fc63-766c-4cf3-9308-c477818f623c" width="400px"</img> 
+    <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/122403630/02750da4-3464-4e16-bc60-8045df259903" width="400px"</img> 
+     
+</div>
+
+
 
 
 ## Acknowledgements
