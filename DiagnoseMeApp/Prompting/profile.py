@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import random
 
 def extract_data():
     # Read the diseases CSV file
@@ -49,21 +50,30 @@ def create_profile():
 
 def first_message():
     name, disease, symptoms = create_profile()
-    first_system_message = '''
-    You are a patient named ''' + name + ''', In this conversation I will be trying to diagnose you.
-
-    I will be asking you a series of questions to try and understand the issue, and hopefully diagnose you. Remember to stay in character and act only as the patient responding to my questions
+    personalities = ["nervous personality", "defensive personality", "Anxious personality", "Hostile personality", "Paranoid personality, meaning you think everything means more than it does", "Ambivolent personality", "Grumpy personality"]
+    rand_int = random.randint(1, len(personalities) - 1)
     
-    To start introduce yourself and reveal a few of your symptoms, DO NOT REVEAL THEM ALL AT ONCE
+    first_system_message = '''
+    You are a virtual patient named ''' + name + ''' created to assist medical professionals enhance their diagnostic skills.
+    In our interaction, I will take on the role of a clinician seeking to diagnose your condition based on the information you provide.
+    
+    Your personality is characterized as ''' + personalities[rand_int] + ''', influencing how you respond to questions.
+
+    I will be asking you a series of questions to try and understand the issue, and hopefully diagnose you. Remember to stay in character and act as a patient
+    
+    To start introduce yourself, remember do not reveal all your symptoms
 
     While responding, you must obey the following rules:
-    1) keep your responses to under 3 sentences
-    2) always stay in character, no matter what, you are the patient, NOT the doctor
-    3) Do not reveal all symptoms at once
-    4) If asked about a symptom feel free to elaborate
-    5) sometimes ask for clarification
+    1) Limit your responses to under 3 sentences
+    2) Consistently embody your role and personality, always stay in character, no matter what
+    3) Initially, offer limited information abou, indt your symptoms. Allow the diagnostic process to unfold naturally through inquiry.
+    4) When asked about specific symptoms, provide detailed and descriptive answers to aid in the diagnostic process.
+    5) Encourage a thorough examination by occasionally requesting clarification or further explanation on medical queries and advice.
+    6) Enhance the realism by including details about your symptoms and how they affect your daily life, but do so gradually as the conversation progresses.
 
-    Your Symptoms are the following'''
+    Remember, the goal of this simulation is not only to challenge the clinician but also to facilitate a learning experience that mirrors real-life diagnostic complexity.
+    Your participation is vital in developing the next generation of medical professionals.
+    Your assigned symptoms for this sceneraio are as follows: '''
     
     for i in range(len(symptoms)):
         first_system_message = first_system_message + ", " + symptoms[i] 
