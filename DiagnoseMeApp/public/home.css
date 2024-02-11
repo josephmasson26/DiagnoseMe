@@ -6,6 +6,7 @@ h1 {
     font-size: 1.9em;
     margin-top: 10px;
     opacity: 1;
+    text-shadow: 0px 0px 1px rgba(25,139,154, 0.5); /* Add this line */
 }
 
 .subtitle {
@@ -106,15 +107,14 @@ body, html {
   .box:nth-child(1) {
     grid-row: 2;
     grid-column: 1;
-    background: linear-gradient(to right, #ca35db, #d99dfd);
+    background: linear-gradient(to right, #8cb5f5, #e2c4f6);
     opacity: 0.5;
   }
 
   .box:nth-child(1):hover {
-    background: #b94ff7;
-    color: #66bcde;
+    background: #8b6dc3;
+    color: #66dade;
     box-shadow: 0 0 30px #e13c62;
-    
     opacity: 1;
     transform: scale(1.1); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
 
@@ -123,7 +123,8 @@ body, html {
   .box:nth-child(3) {
     grid-row: 1;
     grid-column: 1;
-    background: linear-gradient(to right, #8cb5f5, #e2c4f6);
+    background: linear-gradient(to right, #ca35db, #d99dfd);
+    
     opacity: 0.5;
 
     display: flex;
@@ -133,8 +134,8 @@ body, html {
   }
 
   .box:nth-child(3):hover {
-    background: #8b6dc3;
-    color: #66dade;
+    background: #b94ff7;
+    color: #66bcde;
     box-shadow: 0 0 30px #e13c62;
     color: #66bcde;
     opacity: 1;
