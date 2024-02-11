@@ -238,7 +238,7 @@ body, html {
     overflow: auto
   }
 
-.submit-diagnosis-button {
+/* .submit-diagnosis-button {
   display: block;
   margin: 0 auto;
   padding: 20px 40px;
@@ -256,7 +256,7 @@ body, html {
   background: #37034d;
   transform: scale(1.1);
 }
- 
+  */
 
 .reset-button {
   display: block;
