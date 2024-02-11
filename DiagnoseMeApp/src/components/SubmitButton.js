@@ -34,7 +34,7 @@ export const ButtonGooey = () => {
             <feColorMatrix
               in="blur"
               mode="matrix"
-              values="0 0 1 0 0  0 1 1 0 0  1 0 1 0 1  0 0 0 20 -10"
+              values="0 0 1 0 0  0 1 1 0 0  1 0 1 1 1  0 0 0 20 -10"
 
               result="gooey"
             />
@@ -81,7 +81,7 @@ export const ButtonGooey = () => {
           position: absolute;
           content: "";
           border-radius: 12px;
-          transition: transform 0.8s;
+          transition: transform 0.4s;
           transition-timing-function: bezier(0.2, 0.8, 0.2, 1.2);
           transform: translateX(80%) translateY(0%);
           cursor: pointer;

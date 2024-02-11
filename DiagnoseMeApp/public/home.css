@@ -1,5 +1,5 @@
 h1 {
-	background: linear-gradient(to right, #91dfe9 0%, #188b9a 100%);
+	background: linear-gradient(to right, rgb(80, 52, 221) 0%, rgb(221, 52, 218));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
     text-align: center;
@@ -36,7 +36,7 @@ p {
 .github-button {
   width: 30px;  /* adjust as needed */
   height: 30px;  /* adjust as needed */
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 
@@ -108,14 +108,14 @@ body, html {
   .box:nth-child(1) {
     grid-row: 2;
     grid-column: 1;
-    background: linear-gradient(to right, #8cb5f5, #e2c4f6);
+    background: linear-gradient(to right, #8cb5f5, #5b90e7);
     opacity: 0.5;
   }
 
   .box:nth-child(1):hover {
-    background: #a973d5;
+    background: linear-gradient(to right, #8abbf5, #4b7dba);
     color: #66dade;
-    box-shadow: 0 0 30px #e13c62;
+    box-shadow: 0 0 30px #fedfff;
     opacity: 1;
     transform: scale(1.1); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
 
@@ -135,9 +135,9 @@ body, html {
   }
 
   .box:nth-child(3):hover {
-    background: #a973d5;
+    background: linear-gradient(to right, #a973d5, #923fd6);
     color: #66bcde;
-    box-shadow: 0 0 30px #e13c62;
+    box-shadow: 0 0 30px #83f0ff;
     color: #66bcde;
     opacity: 1;
     transform: scale(1.1); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
@@ -208,12 +208,12 @@ body, html {
   }
 
   .main-box:hover {
-    background: #a973d5; /* Different variant */
+    background: linear-gradient(to right, #9792c5, #def0fa);
     color: #66bcde;
-    box-shadow: 0 0 30px #e13c62;
+    box-shadow: 0 0 30px #b2f8ff;
     text-shadow: 0 0 30px #e13c62;
     opacity: 1;
-    transform: scale(1.05); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
+    transform: scale(1.1); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
     z-index: 1;
   }
 
