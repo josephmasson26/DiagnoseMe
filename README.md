@@ -41,9 +41,15 @@ After starting the application, interact with the chatbot by typing your queries
 - **HTML/CSS:** Used to structure and style the user interface of DiagnoseMe.
 - **npm:** A package manager for JavaScript, used to manage the project's dependencies.
 
-## Note
+## Gallery
 
-While developing DiagnoseMe, we explored various AI models for generating responses. We initially considered using Google's Gemini but ultimately decided to use OpenAI's ChatGPT due to its superior performance in generating realistic and varied interactions.
+<div align="center">
+    <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/122403630/b279e0a4-65f9-4b4f-8147-3f339371bbf7" width="300px"</img> 
+    <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/122403630/4ff3fc63-766c-4cf3-9308-c477818f623c" width="300px"</img> 
+    <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/122403630/02750da4-3464-4e16-bc60-8045df259903" width="300px"</img> 
+    <img src="https://github.com/NamkhangNLe/DiagnoseMe/assets/122403630/896a0e55-27e4-41aa-bccc-b9dd63682450" width="300px"</img> 
+</div>
+
 
 ## Acknowledgements
 
