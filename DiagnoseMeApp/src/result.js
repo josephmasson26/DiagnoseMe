@@ -8,6 +8,7 @@ import ReactStars from 'react-stars';
 import styled from 'styled-components';
 import FadeIn from 'react-fade-in/lib/FadeIn';
 import ResetButton from './components/ResetButton';
+import Credits from './components/credits';
 
 // Change this to get a new rating
 const rating = 3;
@@ -32,7 +33,7 @@ const App = () => {
                     <div className="box side-box">
                         <div class="box-content">
                         <FadeIn delay={1000} transitionDuration={2000}>
-                            <h1>results</h1>
+                            results
                         </FadeIn>
                         </div>
                     </div>
@@ -43,7 +44,9 @@ const App = () => {
                             <Header />
                             <Subtitle />
                             <GithubButton class="github-button" repoUrl="https://github.com/josephmasson26/diagnoseme" />
-
+                            <FadeIn delay={1300} transitionDuration={2000}>
+                                <Credits />
+                            </FadeIn>
                         </div>
                         </div>
                     </div>
@@ -51,7 +54,7 @@ const App = () => {
                 </div>
 
 
-                <FadeIn delay={1000} transitionDuration={4000}>
+                <FadeIn delay={600} transitionDuration={4000}>
                     <ResetButton />
                 </FadeIn>
 

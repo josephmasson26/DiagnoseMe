@@ -1,11 +1,19 @@
+h1 {
+  background: linear-gradient(to right, #ca35db 0%, #330867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 10px;
+}
+
 .subtitle {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   
-    font-size: 0.65em;
-    margin-top: -20px;
+    font-size: 1em;
+    margin-top: 10px;
     padding: 5px;
     width: 100%;
-  
     background: linear-gradient(to right, #9f60e1, #5f3a9b);
     border-radius: 15px;
     -webkit-background-clip: text;
@@ -13,21 +21,33 @@
     text-align: center;
     color: white;
   }
-  
+
   .github-button {
     width: 30px;  /* adjust as needed */
     height: 30px;  /* adjust as needed */
-    padding-bottom: 5px;
+    padding-bottom: 20px;
   }
-  
-  h1 {
-      background: linear-gradient(to right, #ca35db 0%, #330867 100%);
+
+  .credits {
+    .subtitle {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 0.4em;
+      margin-top: 20px;
+      padding: 5px;
+      width: 100%;
+      background: linear-gradient(to right, #e16089, #b31144);
+      border-radius: 15px;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       text-align: center;
-      font-size: 1.5em;
-      margin-top: 30px;
+      color: white;
+    }
   }
+
+  
+  
+  
+  
   
   .container {
     display: flex;
