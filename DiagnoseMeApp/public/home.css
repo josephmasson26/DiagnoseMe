@@ -152,7 +152,8 @@ body, html {
   .dropdown-header {
     background: linear-gradient(to right, #c44561, #790d24); /* Different variant */
     padding: 10px;
-
+    height: 15px;
+    margin-bottom: 2px;
     cursor: pointer;
     overflow-y: auto; /* Enable vertical scrolling */
     overflow-x: hidden; /* Disable horizontal scrolling */
@@ -167,7 +168,7 @@ body, html {
     overflow: hidden;
     max-width: 200px;
     max-height: 150px;
-    transition: height 2s ease-in-out;
+    transition: height 4s ease-in-out;
     overflow-y: auto;
   }
 
@@ -237,26 +238,6 @@ body, html {
     opacity: 1;
     overflow: auto
   }
-
-/* .submit-diagnosis-button {
-  display: block;
-  margin: 0 auto;
-  padding: 20px 40px;
-  font-size: 1.5em;
-  background: linear-gradient(to right, #d2aafc, #7e0955);
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-  transition: transform 2s ease;
-}
-
-.submit-diagnosis-button:hover {
-  background: #37034d;
-  transform: scale(1.1);
-}
-  */
 
 .reset-button {
   display: block;
