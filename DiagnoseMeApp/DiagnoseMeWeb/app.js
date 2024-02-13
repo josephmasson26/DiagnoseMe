@@ -3,7 +3,11 @@ const cors = require('cors');
 const path = require('path');
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    origin: 'http://localhost:3000',
+    credentials: true
+}));
+
 
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'public')));
