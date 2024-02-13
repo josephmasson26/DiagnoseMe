@@ -1,0 +1,42 @@
+/* index.css */
+body {
+    background: url('./assets/images/background2.jpeg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+
+h1 {
+	background: linear-gradient(to right, #ca35db 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 8em;
+    margin-top: 10px;
+}
+
+.subtitle {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin-top: 70px;
+    font-size: 1.5em;
+    bottom: -20;
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to right, #99d0db, #6a3093);
+        border-radius: 15px;
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    text-align: center;
+    color: white;
+}
+
+button {
+    /* existing styles... */
+    background: linear-gradient(to right, #a199db, #6a3093);
+    border: none;
+    color: white; /* You might want to change the text color so it's visible against the gradient */
+}
+
