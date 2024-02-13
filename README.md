@@ -8,7 +8,7 @@
 
 DiagnoseMe is an interactive chatbot application designed to simulate patient interactions. It leverages the power of AI to generate responses based on a variety of medical conditions, providing a user-friendly interface for medical students to practice their diagnostic skills.
 
-#### Hacklytics 2024 Submission for Healthcare and Generative AI
+#### [Hacklytics 2024 Submission for Healthcare and Generative AI](https://devfolio.co/projects/diagnoseme-1992)
 #### [Pitch Slides](https://docs.google.com/presentation/d/1O8DrFlTgRIOPHyBt04RmmRmQAuyr07SZbcZYpIbohj0/edit?usp=sharing)
 #### [Video Demo](https://youtu.be/ZF6Pd7PPAP4)
 
@@ -31,6 +31,13 @@ DiagnoseMe is an interactive chatbot application designed to simulate patient in
 
 1. Install the necessary Python packages with `pip install openai flask`.
 2. Start the server with `python3 main.py`.
+
+### Large Language Model
+
+1. Make an account on [OpenAI Platform](https://platform.openai.com/playground)
+2. Create a new secret API key
+3. Change .env_sample file to .env
+4. Replace YOUR KEY with your new secret key surrounded by single quotes
 
 ## Usage
 

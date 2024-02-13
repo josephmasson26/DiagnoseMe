@@ -141,3 +141,9 @@ backend/.env
 #vscode
 .vscode/
 
+#vscode
+.vscode/
+
+
+#maybe pycache
+DiagnoseMeApp/Prompting/__pycache__/
