@@ -138,3 +138,6 @@ dist
 backend/.env
 .vscode/settings.json
 
+#vscode
+.vscode/
+
