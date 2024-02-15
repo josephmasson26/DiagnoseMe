@@ -14,5 +14,5 @@ jobs:
               with:
                 project: 'DiagnoseMe Project Board'
                 column: 'Bug Tracker'
-                token: ${{ secrets.GITHUB_TOKEN }}
+                repo-token: ${{ secrets.GITHUB_TOKEN }}
               
