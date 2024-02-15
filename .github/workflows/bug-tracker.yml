@@ -2,7 +2,7 @@ name: Bug Tracker Workflow
 
 on:
     issues:
-        types: [labelled]
+        types: [labeled]
 
 jobs:
     move-labeled-issues:
