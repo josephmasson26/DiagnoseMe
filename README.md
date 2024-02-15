@@ -96,6 +96,6 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for more details.
 
 ![logo](https://github.com/josephmasson26/DiagnoseMe/assets/122403630/78efe57d-1eae-4af5-ab3c-6671acb88eec)
