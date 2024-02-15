@@ -8,7 +8,7 @@
 
 DiagnoseMe is an interactive chatbot application designed to simulate patient interactions. It leverages the power of AI to generate responses based on a variety of medical conditions, providing a user-friendly interface for medical students to practice their diagnostic skills.
 
-#### [Hacklytics 2024 Submission for Healthcare and Generative AI](https://devfolio.co/projects/diagnoseme-1992)
+#### [Hacklytics 2024](https://devfolio.co/projects/diagnoseme-1992)
 #### [Pitch Slides](https://docs.google.com/presentation/d/1O8DrFlTgRIOPHyBt04RmmRmQAuyr07SZbcZYpIbohj0/edit?usp=sharing)
 #### [Video Demo](https://youtu.be/ZF6Pd7PPAP4)
 
