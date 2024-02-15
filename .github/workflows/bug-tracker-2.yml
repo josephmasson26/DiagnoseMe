@@ -1,0 +1,18 @@
+name: Bug Tracker Workflow
+
+on:
+    issues:
+        types: [labelled]
+
+jobs:
+    move-labeled-issues:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Move issues labeled bug to Bug Tracker
+              if: github.event.label.name == 'bug'
+              uses: alex-page/github-project-automation-plus@v0.6.0
+              with:
+                project: 'DiagnoseMe Project Board'
+                column: 'Bug Tracker'
+                token: ${{ secrets.GITHUB_TOKEN }}
+              
