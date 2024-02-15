@@ -1,6 +1,6 @@
 ---
 name: Development Issue
-about: issues that normal people will use
+about: Used by Developers to create issues
 title: ''
 labels: ''
 assignees: ''
