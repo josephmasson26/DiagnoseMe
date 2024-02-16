@@ -8,7 +8,8 @@ jobs:
     Move_Labeled_Issue_On_Project_Board:
       runs-on: ubuntu-latest
       steps:
-      - uses: konradpabjan/move-labeled-or-milestoned-issue@v2.0
+      -  if: github.event_label.name == 'bug'
+        uses: konradpabjan/move-labeled-or-milestoned-issue@v2.0
         with:
           action-token: "${{ secrets.GH_PAT }}"
           project-url: "https://github.com/josephmasson26/diagnoseme/projects/9/views/1 "
