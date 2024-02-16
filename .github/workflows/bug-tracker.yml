@@ -11,8 +11,7 @@ jobs:
       - uses: konradpabjan/move-labeled-or-milestoned-issue@v2.0
         with:
           action-token: "${{ secrets.GH_PAT }}"
-          project-url: "https://github.com/users/josephmasson26/diagnoseme/projects"
+          project-url: "https://github.com/users/josephmasson26/projects/9"
           column-name: "Bug Tracker"
           label-name: "bug"
         #   columns-to-ignore: "In Review,Ready to deploy,Done"
-              
