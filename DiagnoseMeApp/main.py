@@ -2,6 +2,7 @@ import json
 import os
 import openai
 from Prompting import profile
+from flask_cors import CORS
 
 from flask import Flask, jsonify, request, send_file, send_from_directory
 '''
@@ -35,6 +36,7 @@ chat_session_test = [
 
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route("/")
 def index():

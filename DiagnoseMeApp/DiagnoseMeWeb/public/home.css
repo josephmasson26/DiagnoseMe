@@ -1,0 +1,284 @@
+h1 {
+	background: linear-gradient(to right, rgb(80, 52, 221) 0%, rgb(221, 52, 218));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 1.9em;
+    margin-top: 10px;
+    opacity: 1;
+    text-shadow: 0px 0px 1px rgba(25,139,154, 0.5); /* Add this line */
+}
+
+.subtitle {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1em;
+  padding: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+  background: linear-gradient(to right, #685896, #361e7c);
+  border-radius: 15px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  color: white;
+}
+
+p {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.85em;
+  font-style: italic;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+  color: #592c7d;
+}
+
+p2 {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1em;
+  font-style: bold;
+  margin-left: 40px;
+  width: 100%;
+  text-align: center;
+  color: #20bba4;
+
+}
+
+.github-button {
+  width: 30px;  /* adjust as needed */
+  height: 30px;  /* adjust as needed */
+  padding-bottom: 10px;
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: -5px;
+}
+
+body {
+    background: url('./assets/images/background2.jpeg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    height: 100%;
+
+    align-items: center;
+    
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Prevents scrollbars */
+  }
+
+
+  
+  .box {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5); /* White background with 50% transparency */
+ 
+    opacity: 0.6;
+    color: white;
+    border-radius: 10px; /* Rounded corners */
+    transition: background 3s ease; /* Smooth transition */
+    transition: transform 2s ease;
+  }
+
+  .box::before{
+    transition: 2s;
+    transform: scale(.9);
+    z-index: -1;
+  }
+
+  .box :hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #e13c62;
+  }
+
+  .box-content {
+    color: #fff;
+    font-size: 20px;
+    opacity: 1;
+  }
+
+  .box:nth-child(1) {
+    grid-row: 2;
+    grid-column: 1;
+    background: linear-gradient(to right, #8cb5f5, #5b90e7);
+    opacity: 0.5;
+  }
+
+  .box:nth-child(1):hover {
+    background: linear-gradient(to right, #8abbf5, #4b7dba);
+    color: #66dade;
+    box-shadow: 0 0 30px #fedfff;
+    opacity: 1;
+    transform: scale(1.1); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
+
+  }
+  
+  .box:nth-child(3) {
+    grid-row: 1;
+    grid-column: 1;
+    background: linear-gradient(to right, #ca35db, #d99dfd);
+    
+    opacity: 0.5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .box:nth-child(3):hover {
+    background: linear-gradient(to right, #a973d5, #923fd6);
+    color: #66bcde;
+    box-shadow: 0 0 30px #83f0ff;
+    color: #66bcde;
+    opacity: 1;
+    transform: scale(1.1); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
+    
+  }
+
+  .dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px; /* Rounded corners */
+    max-height: 200px;
+    width: 200px;
+    margin-left: 10px
+  }
+
+  .dropdown-header {
+    background: linear-gradient(to right, #7b488d, #510f6a); /* Different variant */
+    border-radius: 10px;
+    padding: 10px;
+    height: 15px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    max-width: 200px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .dropdown-body {
+    background: linear-gradient(to right, #cd6fcd, #a421a4); /* Different variant */
+    border-radius: 10px;
+    height: 0;
+    padding: 10px;
+    overflow: hidden;
+    max-width: 200px;
+    max-height: 150px;
+    transition: height 4s ease-in-out;
+    overflow-y: auto;
+  }
+
+  .dropdown-body.expanded {
+    max-height: 150px; /* Adjust as needed */
+  }
+
+  .dropdown.show .dropdown-body {
+    max-height: 150px;
+    
+  }
+  
+  .dropdown-item {
+    padding: 5px 0;
+    cursor: pointer;
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    max-width: 200px;
+  }
+
+  .main-box {
+    grid-row: span 2;
+    grid-column: 2;
+    position: relative;
+    padding: 20px;
+    background: linear-gradient(to right, #c1bafd, #330867); /* Different variant */
+    opacity: 0.5;
+    padding-left: 5px;
+    transition: transform 2s ease; z-index: 0s;
+  }
+
+  .main-box:hover {
+    background: linear-gradient(to right, #9792c5, #def0fa);
+    color: #66bcde;
+    box-shadow: 0 0 30px #b2f8ff;
+    text-shadow: 0 0 30px #e13c62;
+    opacity: 1;
+    transform: scale(1.1); /* This scales up the box to 110% of its original size when you hover over it. Adjust the scale factor (1.1) as needed. */
+    z-index: 1;
+  }
+
+.grid {
+  min-height: 80vh;
+  min-width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    height: 100%;
+    padding: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+
+  .react-chatbot-kit-chat-container {
+    min-width: 400px;  /* adjust as needed */
+    height: 100%;  /* adjust as needed */
+  }
+
+  .chatbot {
+    position: absolute; /* Positions the chatbot relative to the .main-box */
+    top: 0;
+    left: 0;
+    min-width: 150px; /* Makes the chatbot fill the width of the .main-box */
+    height: 100%; /* Makes the chatbot fill the height of the .main-box */
+    opacity: 1;
+    overflow: auto
+  }
+
+.reset-button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  font-size: 0.8em;
+  background: linear-gradient(to right, #d2aafc, #7e0955);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  transition: transform 2s ease;
+}
+
+.reset-button:hover {
+  background: #37034d;
+  transform: scale(1.3);
+  color: #d2aafc;
+}
+
+  
+
+

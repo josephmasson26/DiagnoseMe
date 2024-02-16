@@ -138,6 +138,12 @@ dist
 backend/.env
 .vscode/settings.json
 
-DiagnoseMeApp/Prompting/__pycache__/
+#vscode
+.vscode/
 
-DiagnoseMeApp/Prompting/__pycache__/profile.cpython-312.pyc
+#vscode
+.vscode/
+
+
+#maybe pycache
+DiagnoseMeApp/Prompting/__pycache__/
